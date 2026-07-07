@@ -493,7 +493,7 @@ button, input, textarea { font-family: var(--font-sans); }
    THEMATIC AREAS
    ============================================================ */
 .thematic { background: var(--bg-alt); scroll-margin-top: 100px; padding: 110px 0; }
-.thematic__grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.thematic__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .theme-card {
   display: flex; flex-direction: column; align-items: flex-start; gap: 12px;
   background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);
@@ -938,6 +938,16 @@ a.contact-info__value:hover { color: var(--blue-600); }
 
 .two-col { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: start; }
 .two-col img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+
+.ops-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1000px; margin: 0 auto; }
+.ops-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px 26px; transition: border-color .2s, box-shadow .2s; }
+.ops-card:hover { border-color: var(--blue-300); box-shadow: var(--shadow-sm); }
+.ops-card__state { display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--blue-700); margin-bottom: 14px; }
+.ops-card__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.ops-card__list li { display: flex; align-items: center; gap: 9px; font-size: 14px; color: var(--text-muted); }
+.ops-card__list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-400); flex: none; }
+.ops-note { text-align: center; color: var(--text-subtle); font-size: 13.5px; font-style: italic; margin: 28px 0 0; }
+@media (max-width: 768px) { .ops-grid { grid-template-columns: 1fr; } }
 
 .theme-testimonial {
   display: flex; flex-direction: column; gap: 20px; background: var(--bg-card); border: 1px solid var(--border);

@@ -15,7 +15,8 @@
     wash: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s6.5 7.4 6.5 12A6.5 6.5 0 0 1 5.5 14.5C5.5 9.9 12 2.5 12 2.5Z"/></svg>',
     education: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5-10-5Z"/><path d="M6 11.5V17c0 1.4 2.7 3 6 3s6-1.6 6-3v-5.5"/><path d="M22 9v6"/></svg>',
     protection: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v6c0 4.6 3.2 7.9 7.5 9 4.3-1.1 7.5-4.4 7.5-9V6L12 3Z"/><path d="m9.5 12 1.8 1.8L15 10"/></svg>',
-    fsl: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V10"/><path d="M12 10c-2 0-4-2-4-5 3 0 4 1.5 4 3 0-1.5 1-3 4-3 0 3-2 5-4 5Z"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></svg>'
+    fsl: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V10"/><path d="M12 10c-2 0-4-2-4-5 3 0 4 1.5 4 3 0-1.5 1-3 4-3 0 3-2 5-4 5Z"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></svg>',
+    peacebuilding: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>'
   };
 
   /* ============================================================
@@ -28,7 +29,8 @@
     { kicker: 'NUTRITION', title: 'Every child, <em>nourished to thrive.</em>', image: 'https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=1600&q=80', alt: 'Nutrition support activity for children' },
     { kicker: 'PROTECTION', title: 'Safety and dignity <em>for every family.</em>', image: 'assets/photo-training.jpg', alt: 'Community protection and empowerment session' },
     { kicker: 'EMERGENCY RESPONSE', title: 'There <em>when crisis strikes.</em>', image: 'assets/photo-relief.jpg', alt: 'Emergency relief distribution to displaced families' },
-    { kicker: 'FSL', title: 'From relief today <em>to lasting income.</em>', image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1600&q=80', alt: 'Food security and livelihoods support' }
+    { kicker: 'FSL', title: 'From relief today <em>to lasting income.</em>', image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1600&q=80', alt: 'Food security and livelihoods support' },
+    { kicker: 'PEACEBUILDING', title: 'Peace that holds, <em>communities that heal.</em>', image: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1600&q=80', alt: 'Community members joining hands in unity' }
   ];
 
   var THEMATIC = [
@@ -37,7 +39,8 @@
     { key: 'wash', title: 'WASH', desc: 'Clean water points, sanitation facilities and hygiene promotion for displaced and host communities.', page: 'programs-wash.html' },
     { key: 'education', title: 'Education', desc: 'Scholarships, learning materials and mentorship that keep children — especially girls — in school.', page: 'programs-education.html' },
     { key: 'protection', title: 'Protection', desc: 'Case management, psychosocial support and safe spaces for women, children and survivors of crisis.', page: 'programs-protection.html' },
-    { key: 'fsl', title: 'FSL', desc: 'Food Security &amp; Livelihoods — emergency food, savings groups and vocational training for lasting incomes.', page: 'programs-fsl.html' }
+    { key: 'fsl', title: 'FSL', desc: 'Food Security &amp; Livelihoods — emergency food, savings groups and vocational training for lasting incomes.', page: 'programs-fsl.html' },
+    { key: 'peacebuilding', title: 'Peacebuilding', desc: 'Conflict resolution, social cohesion and trauma healing — dialogue and youth engagement that rebuild trust after crisis.', page: 'programs-peacebuilding.html' }
   ];
 
   var PROJECTS = [
@@ -46,7 +49,8 @@
     { title: "Girls' Education & School Feeding", cat: 'education', pill: 'EDUCATION', location: 'Maiduguri, Borno', donor: 'Education First Foundation', duration: 'Jul 2025 – Jul 2026', desc: 'Keeping girls in school with scholarships, meals, learning materials and mentorship.', progress: 40, image: 'assets/photo-education.jpg' },
     { title: 'Child Protection Case Management', cat: 'protection', pill: 'PROTECTION', location: 'Jere, Borno', donor: 'UN Foundation', duration: 'Mar – Dec 2025', desc: 'Case workers supporting unaccompanied and separated children toward safe, stable care.', progress: 65, image: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=900&q=80' },
     { title: 'Solar-Powered Borehole Rehabilitation', cat: 'wash', pill: 'WASH', location: 'Bama, Borno', donor: 'Green Earth Initiative', duration: 'Feb – Nov 2025', desc: 'Rehabilitating boreholes with solar pumps to bring reliable clean water to host communities.', progress: 80, image: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80' },
-    { title: "Women's Savings Groups & Microfinance", cat: 'fsl', pill: 'FSL', location: 'Dikwa, Borno', donor: 'Local Community Bank', duration: 'Jan 2025 – ongoing', desc: 'Savings circles and small loans helping women build steady, independent household incomes.', progress: 55, image: 'assets/photo-training.jpg' }
+    { title: "Women's Savings Groups & Microfinance", cat: 'fsl', pill: 'FSL', location: 'Dikwa, Borno', donor: 'Local Community Bank', duration: 'Jan 2025 – ongoing', desc: 'Savings circles and small loans helping women build steady, independent household incomes.', progress: 55, image: 'assets/photo-training.jpg' },
+    { title: 'Enhancing Security & Peacebuilding in Dikwa', cat: 'peacebuilding', pill: 'PEACEBUILDING', location: 'Dikwa, Borno', donor: 'Community-led', duration: '2025', desc: 'Capacity building for female leaders, women groups and youth to enhance security and peacebuilding across eight communities in Dikwa LGA.', progress: 45, image: 'assets/photo-training.jpg' }
   ];
 
   var DASHBOARD = [
