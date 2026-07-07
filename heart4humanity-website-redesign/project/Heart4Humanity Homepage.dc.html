@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/design-system-54d3cd89-0c4e-4946-ab97-44b24b9cd1fd/styles.css">
+<script src="_ds/design-system-54d3cd89-0c4e-4946-ab97-44b24b9cd1fd/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#ffffff}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes popIn{0%{opacity:0;transform:scale(.5)}70%{transform:scale(1.08)}100%{opacity:1;transform:scale(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-sans);color:var(--color-text);background:#ffffff">
+
+  <!-- ============ FIXED HEADER ============ -->
+  <div style="position:fixed;top:0;left:0;right:0;z-index:900" data-screen-label="Header">
+    <sc-if value="{{ campaignBar }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:var(--emerald-600);color:#ffffff;font-size:12.5px;font-weight:500;letter-spacing:.01em;padding:9px 24px;text-align:center">
+        <span style="opacity:.95">Matching month — every gift made in July is doubled by our partner network.</span>
+        <button onClick="{{ openDonateNow }}" style="background:none;border:none;cursor:pointer;color:#ffffff;font-family:var(--font-sans);font-size:12.5px;font-weight:600;text-decoration:underline;text-underline-offset:3px;padding:0">Give now →</button>
+      </div>
+    </sc-if>
+    <div style="background:color-mix(in srgb, var(--slate-950) 82%, transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)">
+      <div style="max-width:1240px;margin:0 auto;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+        <a href="#top" style="display:flex;align-items:center;gap:11px;text-decoration:none">
+          <span style="display:inline-flex;width:34px;height:34px;border-radius:10px;background:var(--emerald-500);align-items:center;justify-content:center;flex:none">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#052e22" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+          </span>
+          <span style="display:flex;flex-direction:column;gap:1px">
+            <span style="color:#ffffff;font-size:15.5px;font-weight:600;letter-spacing:-.01em;line-height:1">Heart for Humanity</span>
+            <span style="color:var(--emerald-400);font-size:9px;font-weight:600;letter-spacing:.32em;line-height:1">INITIATIVE</span>
+          </span>
+        </a>
+        <div style="display:flex;align-items:center;gap:30px">
+          <a href="#mission" style="color:var(--slate-300);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .15s" style-hover="color:#ffffff">Mission</a>
+          <a href="#programs" style="color:var(--slate-300);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .15s" style-hover="color:#ffffff">Programs</a>
+          <a href="#stories" style="color:var(--slate-300);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .15s" style-hover="color:#ffffff">Stories</a>
+          <a href="#support" style="color:var(--slate-300);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .15s" style-hover="color:#ffffff">Get involved</a>
+        </div>
+        <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="primary" size="md" on-click="{{ openDonateNow }}" hint-size="110px,40px">Donate</x-import>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" data-theme="dark" data-screen-label="Hero" style="position:relative;background:radial-gradient(1100px 640px at 82% -12%, rgba(16,185,129,.16), transparent 62%), radial-gradient(800px 500px at -10% 110%, rgba(16,185,129,.07), transparent 55%), var(--slate-950);overflow:hidden">
+    <div style="max-width:1240px;margin:0 auto;padding:190px 40px 0">
+      <div style="display:grid;grid-template-columns:1.04fr .96fr;gap:72px;align-items:center">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:28px">
+          <div style="animation:fadeUp .7s ease .05s both;display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-full);padding:7px 16px 7px 10px">
+            <span style="width:7px;height:7px;border-radius:50%;background:var(--emerald-400);flex:none"></span>
+            <span style="color:var(--slate-300);font-size:11.5px;font-weight:500;letter-spacing:.14em">HEART FOR HUMANITY INITIATIVE</span>
+          </div>
+          <h1 style="animation:fadeUp .7s ease .15s both;margin:0;color:#ffffff;font-size:clamp(46px, 4.6vw, 68px);line-height:1.04;font-weight:600;letter-spacing:-.028em;text-wrap:balance">Positive impact, in our community <em style="font-style:italic;font-weight:400;color:var(--emerald-400)">and beyond.</em></h1>
+          <p style="animation:fadeUp .7s ease .25s both;margin:0;max-width:520px;color:var(--slate-400);font-size:17px;line-height:1.65;text-wrap:pretty">We are a community-led non-profit working across health, education, livelihoods and the environment — together with the people we serve, so the change we make lasts.</p>
+          <div style="animation:fadeUp .7s ease .35s both;display:flex;align-items:center;gap:14px;padding-top:6px">
+            <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="primary" size="lg" on-click="{{ openDonateNow }}" hint-size="150px,48px">Donate now</x-import>
+            <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="outline" size="lg" on-click="{{ goSupport }}" hint-size="170px,48px">Ways to help</x-import>
+          </div>
+        </div>
+        <div style="animation:fadeUp .8s ease .3s both;position:relative;padding:0 0 18px 18px">
+          <div style="position:absolute;left:0;bottom:0;width:78%;height:62%;border:1px solid rgba(52,211,153,.35);border-radius:26px;pointer-events:none"></div>
+          <image-slot id="hero-photo" shape="rounded" radius="22" placeholder="Drop a photo from the field — volunteers, a clinic day, a classroom" style="display:block;width:100%;height:480px;position:relative"></image-slot>
+        </div>
+      </div>
+      <div style="animation:fadeUp .8s ease .5s both;margin-top:64px;border-top:1px solid rgba(255,255,255,.09);display:grid;grid-template-columns:repeat(4, 1fr);padding:30px 0 34px">
+        <div style="display:flex;flex-direction:column;gap:6px;padding:0 28px 0 0">
+          <span style="color:#ffffff;font-size:38px;font-weight:600;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums">{{ stat0 }}</span>
+          <span style="color:var(--slate-500);font-size:11.5px;font-weight:500;letter-spacing:.12em">LIVES REACHED</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:0 28px;border-left:1px solid rgba(255,255,255,.09)">
+          <span style="color:#ffffff;font-size:38px;font-weight:600;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums">{{ stat1 }}</span>
+          <span style="color:var(--slate-500);font-size:11.5px;font-weight:500;letter-spacing:.12em">COMMUNITY PROJECTS</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:0 28px;border-left:1px solid rgba(255,255,255,.09)">
+          <span style="color:#ffffff;font-size:38px;font-weight:600;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums">{{ stat2 }}</span>
+          <span style="color:var(--slate-500);font-size:11.5px;font-weight:500;letter-spacing:.12em">ACTIVE VOLUNTEERS</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:0 28px;border-left:1px solid rgba(255,255,255,.09)">
+          <span style="color:#ffffff;font-size:38px;font-weight:600;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums">{{ stat3 }}</span>
+          <span style="color:var(--slate-500);font-size:11.5px;font-weight:500;letter-spacing:.12em">PROGRAM REGIONS</span>
+        </div>
+      </div>
+      <p style="margin:0;padding:0 0 26px;color:var(--slate-600);font-size:11px;font-style:italic;text-align:right">Illustrative figures — set your live impact data in Tweaks.</p>
+    </div>
+  </section>
+
+  <!-- ============ MISSION ============ -->
+  <section id="mission" data-screen-label="Mission" style="background:#ffffff;scroll-margin-top:110px">
+    <div style="max-width:1240px;margin:0 auto;padding:130px 40px 120px;display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:start">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:26px">
+        <span style="color:var(--emerald-600);font-size:12px;font-weight:600;letter-spacing:.22em">OUR MISSION</span>
+        <h2 style="margin:0;font-size:clamp(34px,3.2vw,46px);font-weight:600;letter-spacing:-.025em;line-height:1.14;color:var(--slate-900);text-wrap:balance">“Working together to create lasting impact in our communities.”</h2>
+        <div style="width:64px;height:3px;background:var(--emerald-500);border-radius:2px"></div>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:36px;padding-top:14px">
+        <p style="margin:0;color:var(--slate-600);font-size:16.5px;line-height:1.75;text-wrap:pretty">Dedicated to making a positive impact in our community and beyond, we design programs with local leaders — not for them. From mobile clinics to microloans, every initiative is built to keep working long after we step back.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+          <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--slate-200);padding-top:14px">
+            <span style="color:var(--slate-300);font-size:13px;font-weight:600">01</span>
+            <span style="color:var(--slate-900);font-size:14.5px;font-weight:600">Community-led</span>
+            <span style="color:var(--slate-500);font-size:13px;line-height:1.55">Designed with the people we serve, never for them.</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--slate-200);padding-top:14px">
+            <span style="color:var(--slate-300);font-size:13px;font-weight:600">02</span>
+            <span style="color:var(--slate-900);font-size:14.5px;font-weight:600">Transparent by default</span>
+            <span style="color:var(--slate-500);font-size:13px;line-height:1.55">Every dollar tracked to a program, every outcome shared.</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--slate-200);padding-top:14px">
+            <span style="color:var(--slate-300);font-size:13px;font-weight:600">03</span>
+            <span style="color:var(--slate-900);font-size:14.5px;font-weight:600">Built to last</span>
+            <span style="color:var(--slate-500);font-size:13px;line-height:1.55">We measure success in years, not photo opportunities.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMS ============ -->
+  <section id="programs" data-screen-label="Programs" style="background:var(--slate-50);border-top:1px solid var(--slate-200);border-bottom:1px solid var(--slate-200);scroll-margin-top:110px">
+    <div style="max-width:1240px;margin:0 auto;padding:110px 40px 120px">
+      <div data-reveal="1" style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:64px">
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <span style="color:var(--emerald-600);font-size:12px;font-weight:600;letter-spacing:.22em">WHAT WE DO</span>
+          <h2 style="margin:0;font-size:clamp(34px,3.2vw,46px);font-weight:600;letter-spacing:-.025em;line-height:1.1;color:var(--slate-900)">Five programs, one goal.</h2>
+        </div>
+        <p style="margin:0;max-width:360px;color:var(--slate-500);font-size:14.5px;line-height:1.65">Hover or tap a program to explore how each one moves a community forward.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start">
+        <div data-reveal="1" style="display:flex;flex-direction:column">
+          <sc-for list="{{ programs }}" as="prog" hint-placeholder-count="5">
+            <button onClick="{{ prog.select }}" onMouseEnter="{{ prog.select }}" style="display:flex;align-items:center;gap:22px;background:none;border:none;border-bottom:1px solid var(--slate-200);padding:24px 8px;cursor:pointer;text-align:left;font-family:var(--font-sans);transition:transform .25s ease;transform:{{ prog.rowShift }}">
+              <span style="font-size:13px;font-weight:600;flex:none;width:26px;transition:color .25s;color:{{ prog.numColor }}">{{ prog.n }}</span>
+              <span style="font-size:clamp(22px,2vw,28px);font-weight:600;letter-spacing:-.02em;line-height:1.2;flex:1;transition:color .25s;color:{{ prog.titleColor }}">{{ prog.title }}</span>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:opacity .25s;opacity:{{ prog.arrowOpacity }}"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </sc-for>
+        </div>
+        <div data-reveal="1" style="position:sticky;top:120px;background:#ffffff;border:1px solid var(--slate-200);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);overflow:hidden">
+          <image-slot id="programs-photo" shape="rect" placeholder="Drop a program photo here" style="display:block;width:100%;height:230px"></image-slot>
+          <div style="padding:30px 32px 32px;display:flex;flex-direction:column;gap:14px;transition:opacity .18s ease;opacity:{{ detailOpacity }}">
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="color:var(--emerald-600);font-size:12px;font-weight:600;letter-spacing:.18em">{{ activeKicker }}</span>
+            </div>
+            <h3 style="margin:0;font-size:24px;font-weight:600;letter-spacing:-.02em;color:var(--slate-900)">{{ activeTitle }}</h3>
+            <p style="margin:0;color:var(--slate-600);font-size:14.5px;line-height:1.7;min-height:96px;text-wrap:pretty">{{ activeBody }}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ activeTags }}" as="tag" hint-placeholder-count="2">
+                <span style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:var(--radius-full);background:var(--emerald-50);color:var(--emerald-700);font-size:12px;font-weight:500">{{ tag }}</span>
+              </sc-for>
+            </div>
+            <button onClick="{{ openDonateNow }}" style="margin-top:8px;display:inline-flex;align-items:center;gap:8px;background:none;border:none;padding:0;cursor:pointer;color:var(--slate-900);font-family:var(--font-sans);font-size:13.5px;font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--emerald-400)" style-hover="color:var(--emerald-700)">Fund this program →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section id="stories" data-screen-label="Story" style="background:#ffffff;scroll-margin-top:110px">
+    <div style="max-width:1240px;margin:0 auto;padding:130px 40px;display:grid;grid-template-columns:.9fr 1.1fr;gap:84px;align-items:center">
+      <div data-reveal="1" style="position:relative;padding:18px 0 0 18px">
+        <div style="position:absolute;top:0;left:0;width:70%;height:70%;background:var(--emerald-50);border-radius:26px;pointer-events:none"></div>
+        <image-slot id="story-photo" shape="rounded" radius="22" placeholder="Drop a portrait — the person behind the story" style="display:block;width:100%;height:460px;position:relative"></image-slot>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;align-items:flex-start;gap:26px">
+        <span style="color:var(--emerald-600);font-size:12px;font-weight:600;letter-spacing:.22em">FROM THE FIELD</span>
+        <p style="margin:0;font-size:clamp(26px,2.4vw,34px);font-weight:400;font-style:italic;letter-spacing:-.015em;line-height:1.35;color:var(--slate-900);text-wrap:balance">“The scholarship didn’t just cover school fees — it told my daughter the world expected her to succeed.”</p>
+        <div style="display:flex;align-items:center;gap:14px">
+          <span class="ds-avatar ds-avatar--lg"><span class="ds-avatar__initials">AO</span></span>
+          <span style="display:flex;flex-direction:column;gap:2px">
+            <span style="font-size:14.5px;font-weight:600;color:var(--slate-900)">Amina O.</span>
+            <span style="font-size:12.5px;color:var(--slate-500)">Parent · Education &amp; Scholarships program</span>
+          </span>
+        </div>
+        <span style="color:var(--slate-400);font-size:11px;font-style:italic">Illustrative story — replace with a real voice from your programs.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORT ============ -->
+  <section id="support" data-screen-label="Get involved" style="background:var(--slate-50);border-top:1px solid var(--slate-200);scroll-margin-top:110px">
+    <div style="max-width:1240px;margin:0 auto;padding:110px 40px 120px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;margin-bottom:64px">
+        <span style="color:var(--emerald-600);font-size:12px;font-weight:600;letter-spacing:.22em">GET INVOLVED</span>
+        <h2 style="margin:0;font-size:clamp(34px,3.2vw,46px);font-weight:600;letter-spacing:-.025em;line-height:1.1;color:var(--slate-900);max-width:560px;text-wrap:balance">Three ways to move the work forward.</h2>
+      </div>
+      <div data-reveal="1" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0">
+        <button onClick="{{ openDonateNow }}" style="display:flex;flex-direction:column;align-items:flex-start;gap:16px;background:none;border:none;border-left:1px solid var(--slate-200);padding:8px 36px 8px 28px;cursor:pointer;text-align:left;font-family:var(--font-sans)" style-hover="background:rgba(255,255,255,.7)">
+          <span style="font-size:56px;font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--slate-200);transition:color .2s">01</span>
+          <span style="font-size:20px;font-weight:600;color:var(--slate-900)">Give</span>
+          <span style="font-size:14px;line-height:1.65;color:var(--slate-500)">Fund the work directly. Every dollar is assigned to a program, and we publish where it goes.</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;color:var(--emerald-700);font-size:13.5px;font-weight:600">Donate now →</span>
+        </button>
+        <button onClick="{{ mailVolunteer }}" style="display:flex;flex-direction:column;align-items:flex-start;gap:16px;background:none;border:none;border-left:1px solid var(--slate-200);padding:8px 36px 8px 28px;cursor:pointer;text-align:left;font-family:var(--font-sans)" style-hover="background:rgba(255,255,255,.7)">
+          <span style="font-size:56px;font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--slate-200);transition:color .2s">02</span>
+          <span style="font-size:20px;font-weight:600;color:var(--slate-900)">Volunteer</span>
+          <span style="font-size:14px;line-height:1.65;color:var(--slate-500)">Give time and skills, on the ground or remotely — from clinic days to classroom mentoring.</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;color:var(--emerald-700);font-size:13.5px;font-weight:600">Join as a volunteer →</span>
+        </button>
+        <button onClick="{{ mailPartner }}" style="display:flex;flex-direction:column;align-items:flex-start;gap:16px;background:none;border:none;border-left:1px solid var(--slate-200);border-right:1px solid var(--slate-200);padding:8px 36px 8px 28px;cursor:pointer;text-align:left;font-family:var(--font-sans)" style-hover="background:rgba(255,255,255,.7)">
+          <span style="font-size:56px;font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--slate-200);transition:color .2s">03</span>
+          <span style="font-size:20px;font-weight:600;color:var(--slate-900)">Partner</span>
+          <span style="font-size:14px;line-height:1.65;color:var(--slate-500)">Corporates, foundations and NGOs — co-fund a program or help us bring one to your region.</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;color:var(--emerald-700);font-size:13.5px;font-weight:600">Start a partnership →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DONATE BAND ============ -->
+  <section id="donate" data-screen-label="Donate band" style="background:radial-gradient(900px 500px at 15% -30%, rgba(255,255,255,.12), transparent 60%), var(--emerald-700);scroll-margin-top:110px">
+    <div style="max-width:1240px;margin:0 auto;padding:100px 40px;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px">
+        <h2 style="margin:0;color:#ffffff;font-size:clamp(38px,3.6vw,54px);font-weight:600;letter-spacing:-.028em;line-height:1.08">Generosity, <em style="font-style:italic;font-weight:400">multiplied.</em></h2>
+        <p style="margin:0;max-width:480px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65;text-wrap:pretty">A monthly gift keeps clinics stocked and classrooms open long after the headlines move on. Start with any amount.</p>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;align-items:flex-start;gap:18px">
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <sc-for list="{{ bandChips }}" as="chip" hint-placeholder-count="3">
+            <button onClick="{{ chip.go }}" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:var(--radius-full);color:#ffffff;font-family:var(--font-sans);font-size:15px;font-weight:600;padding:11px 22px;cursor:pointer;transition:background .15s" style-hover="background:rgba(255,255,255,.24)">{{ chip.label }}</button>
+          </sc-for>
+        </div>
+        <button onClick="{{ openDonateNow }}" style="display:inline-flex;align-items:center;gap:10px;background:#ffffff;color:var(--emerald-800);border:none;border-radius:var(--radius-lg);font-family:var(--font-sans);font-size:16px;font-weight:600;height:52px;padding:0 28px;cursor:pointer;box-shadow:var(--shadow-lg);transition:transform .15s ease" style-hover="transform:translateY(-2px)">Give today
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+        <span style="color:rgba(255,255,255,.55);font-size:11.5px">Design prototype — no real payments are processed.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer data-theme="dark" data-screen-label="Footer" style="background:var(--slate-950)">
+    <div style="max-width:1240px;margin:0 auto;padding:90px 40px 0">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:56px;padding-bottom:70px">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:18px">
+          <span style="display:flex;align-items:center;gap:11px">
+            <span style="display:inline-flex;width:34px;height:34px;border-radius:10px;background:var(--emerald-500);align-items:center;justify-content:center;flex:none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#052e22" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            </span>
+            <span style="display:flex;flex-direction:column;gap:1px">
+              <span style="color:#ffffff;font-size:15.5px;font-weight:600;letter-spacing:-.01em;line-height:1">Heart for Humanity</span>
+              <span style="color:var(--emerald-400);font-size:9px;font-weight:600;letter-spacing:.32em;line-height:1">INITIATIVE</span>
+            </span>
+          </span>
+          <p style="margin:0;color:var(--slate-500);font-size:13.5px;line-height:1.7;max-width:300px">Dedicated to making a positive impact in our community and beyond.</p>
+          <div style="display:flex;gap:18px">
+            <a href="#top" style="color:var(--slate-400);font-size:12.5px;font-weight:500;text-decoration:none" style-hover="color:#ffffff">Instagram</a>
+            <a href="#top" style="color:var(--slate-400);font-size:12.5px;font-weight:500;text-decoration:none" style-hover="color:#ffffff">Facebook</a>
+            <a href="#top" style="color:var(--slate-400);font-size:12.5px;font-weight:500;text-decoration:none" style-hover="color:#ffffff">LinkedIn</a>
+            <a href="#top" style="color:var(--slate-400);font-size:12.5px;font-weight:500;text-decoration:none" style-hover="color:#ffffff">X</a>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span style="color:var(--slate-500);font-size:11px;font-weight:600;letter-spacing:.18em">PROGRAMS</span>
+          <a href="#programs" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Global Partnerships</a>
+          <a href="#programs" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Health &amp; Medical Outreach</a>
+          <a href="#programs" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Microfinance &amp; Livelihoods</a>
+          <a href="#programs" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Education &amp; Scholarships</a>
+          <a href="#programs" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Environment &amp; Climate</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span style="color:var(--slate-500);font-size:11px;font-weight:600;letter-spacing:.18em">ORGANIZATION</span>
+          <a href="#mission" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Our mission</a>
+          <a href="#stories" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Stories</a>
+          <a href="#support" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Get involved</a>
+          <a href="#donate" style="color:var(--slate-300);font-size:13.5px;text-decoration:none" style-hover="color:#ffffff">Donate</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <span style="color:var(--slate-500);font-size:11px;font-weight:600;letter-spacing:.18em">STAY CLOSE</span>
+          <sc-if value="{{ notSubscribed }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <span style="color:var(--slate-400);font-size:13px;line-height:1.6">One email a month — what your support made possible.</span>
+              <div style="display:flex;gap:8px">
+                <input class="ds-input" type="email" placeholder="you@example.org" value="{{ subEmail }}" onChange="{{ setSubEmail }}" style="flex:1;min-width:0" />
+                <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="primary" size="md" on-click="{{ subscribe }}" disabled="{{ subDisabled }}" hint-size="100px,40px">Sign up</x-import>
+              </div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ subscribed }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:10px;background:var(--color-primary-subtle);border-radius:var(--radius-md);padding:12px 16px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color:var(--emerald-300);font-size:13px;font-weight:500">You’re on the list. Thank you.</span>
+            </div>
+          </sc-if>
+          <a href="mailto:hello@heart4humanityinitiative.org" style="color:var(--slate-400);font-size:13px;text-decoration:none" style-hover="color:#ffffff">hello@heart4humanityinitiative.org</a>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0 30px">
+        <span style="color:var(--slate-600);font-size:12px">© 2026 Heart for Humanity Initiative. All rights reserved.</span>
+        <span style="color:var(--slate-600);font-size:12px">Registered non-profit · Add EIN / registration no. here</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ DONATE MODAL ============ -->
+  <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ close }}" data-screen-label="Donate modal" style="position:fixed;inset:0;z-index:1000;background:color-mix(in srgb, var(--slate-950) 62%, transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:28px">
+      <div onClick="{{ stopCard }}" style="width:600px;max-width:100%;max-height:92vh;overflow:auto;background:#ffffff;border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);animation:fadeUp .35s ease both">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px 0">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--emerald-500);align-items:center;justify-content:center;flex:none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#052e22" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            </span>
+            <span style="font-size:13px;font-weight:600;color:var(--slate-900)">Support the mission</span>
+          </div>
+          <button onClick="{{ close }}" aria-label="Close" style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--slate-100);border:none;cursor:pointer;color:var(--slate-500)" style-hover="background:var(--slate-200)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <sc-if value="{{ showProgress }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;align-items:center;gap:8px;padding:22px 28px 0">
+            <span style="height:3px;flex:1;border-radius:2px;transition:background .3s;background:{{ seg1 }}"></span>
+            <span style="height:3px;flex:1;border-radius:2px;transition:background .3s;background:{{ seg2 }}"></span>
+            <span style="height:3px;flex:1;border-radius:2px;transition:background .3s;background:{{ seg3 }}"></span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:8px 28px 0">
+            <span style="font-size:11px;font-weight:600;letter-spacing:.08em;color:{{ lab1 }}">AMOUNT</span>
+            <span style="font-size:11px;font-weight:600;letter-spacing:.08em;color:{{ lab2 }}">FREQUENCY</span>
+            <span style="font-size:11px;font-weight:600;letter-spacing:.08em;color:{{ lab3 }}">DETAILS</span>
+          </div>
+        </sc-if>
+
+        <!-- STEP 1 · AMOUNT -->
+        <sc-if value="{{ s1 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:20px;padding:26px 28px 30px">
+            <h3 style="margin:0;font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--slate-900)">Choose your gift</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <sc-for list="{{ presets }}" as="p" hint-placeholder-count="4">
+                <button onClick="{{ p.pick }}" style="display:flex;flex-direction:column;align-items:flex-start;gap:6px;border-radius:var(--radius-lg);padding:16px 18px;cursor:pointer;text-align:left;font-family:var(--font-sans);transition:border-color .15s, background .15s;background:{{ p.bg }};border:{{ p.border }}">
+                  <span style="font-size:20px;font-weight:600;letter-spacing:-.01em;color:var(--slate-900)">{{ p.label }}</span>
+                  <span style="font-size:12px;line-height:1.5;color:var(--slate-500)">{{ p.impact }}</span>
+                </button>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label class="ds-label" for="custom-amt">Or enter another amount</label>
+              <div class="ds-input-group">
+                <span class="ds-input-addon" style="width:auto;font-size:14px;font-weight:600;color:var(--slate-400)">$</span>
+                <input class="ds-input" id="custom-amt" type="number" min="1" placeholder="0.00" value="{{ custom }}" onChange="{{ setCustom }}" onFocus="{{ focusCustom }}" />
+              </div>
+            </div>
+            <p style="margin:0;min-height:20px;font-size:13px;font-style:italic;color:var(--emerald-700)">{{ impactLine }}</p>
+            <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="primary" size="lg" block="{{ true }}" on-click="{{ goNext }}" disabled="{{ nextDisabled }}" hint-size="100%,48px">{{ continueLabel }}</x-import>
+          </div>
+        </sc-if>
+
+        <!-- STEP 2 · FREQUENCY -->
+        <sc-if value="{{ s2 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:20px;padding:26px 28px 30px">
+            <h3 style="margin:0;font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--slate-900)">How often?</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <button onClick="{{ pickOnce }}" style="display:flex;flex-direction:column;align-items:flex-start;gap:8px;border-radius:var(--radius-lg);padding:18px;cursor:pointer;text-align:left;font-family:var(--font-sans);transition:border-color .15s, background .15s;background:{{ onceBg }};border:{{ onceBorder }}">
+                <span style="font-size:17px;font-weight:600;color:var(--slate-900)">One-time</span>
+                <span style="font-size:12.5px;line-height:1.55;color:var(--slate-500)">A single gift, right where it’s needed today.</span>
+              </button>
+              <button onClick="{{ pickMonthly }}" style="position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:8px;border-radius:var(--radius-lg);padding:18px;cursor:pointer;text-align:left;font-family:var(--font-sans);transition:border-color .15s, background .15s;background:{{ monthlyBg }};border:{{ monthlyBorder }}">
+                <span style="position:absolute;top:-10px;right:12px;background:var(--emerald-600);color:#ffffff;font-size:10px;font-weight:600;letter-spacing:.06em;border-radius:var(--radius-full);padding:4px 10px">MOST IMPACT</span>
+                <span style="font-size:17px;font-weight:600;color:var(--slate-900)">Monthly</span>
+                <span style="font-size:12.5px;line-height:1.55;color:var(--slate-500)">Steady support we can plan programs around.</span>
+              </button>
+            </div>
+            <p style="margin:0;min-height:20px;font-size:13px;font-style:italic;color:var(--emerald-700)">{{ freqLine }}</p>
+            <div style="display:flex;gap:10px">
+              <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="ghost" size="lg" on-click="{{ goBack }}" hint-size="90px,48px">Back</x-import>
+              <div style="flex:1;display:flex">
+                <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="primary" size="lg" block="{{ true }}" on-click="{{ goNext }}" hint-size="100%,48px">Continue</x-import>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- STEP 3 · DETAILS -->
+        <sc-if value="{{ s3 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:18px;padding:26px 28px 30px">
+            <h3 style="margin:0;font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--slate-900)">Your details</h3>
+            <x-import component-from-global-scope="DesignSystem_54d3cd.Input" label="Full name" required="{{ true }}" placeholder="Jane Doe" value="{{ name }}" on-change="{{ setName }}" hint-size="100%,70px"></x-import>
+            <x-import component-from-global-scope="DesignSystem_54d3cd.Input" label="Email" required="{{ true }}" type="email" placeholder="you@example.org" help="Your receipt goes here — nothing else." value="{{ email }}" on-change="{{ setEmail }}" hint-size="100%,90px"></x-import>
+            <x-import component-from-global-scope="DesignSystem_54d3cd.Input" label="Dedicate this gift (optional)" placeholder="In honor of…" value="{{ honor }}" on-change="{{ setHonor }}" hint-size="100%,70px"></x-import>
+            <label class="ds-check">
+              <input type="checkbox" checked="{{ anon }}" onChange="{{ toggleAnon }}" />
+              <span>Keep my gift anonymous</span>
+            </label>
+            <div style="display:flex;gap:10px;padding-top:4px">
+              <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="ghost" size="lg" on-click="{{ goBack }}" hint-size="90px,48px">Back</x-import>
+              <div style="flex:1;display:flex">
+                <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="primary" size="lg" block="{{ true }}" on-click="{{ goNext }}" disabled="{{ nextDisabled }}" hint-size="100%,48px">{{ continueLabel }}</x-import>
+              </div>
+            </div>
+            <span style="font-size:11px;color:var(--slate-400);text-align:center">Design prototype — no real payment is processed.</span>
+          </div>
+        </sc-if>
+
+        <!-- STEP 4 · CONFIRMATION -->
+        <sc-if value="{{ s4 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:40px 28px 40px;text-align:center">
+            <sc-if value="{{ processing }}" hint-placeholder-val="{{ false }}">
+              <span style="width:44px;height:44px;border-radius:50%;border:3px solid var(--slate-200);border-top-color:var(--emerald-600);animation:spin .8s linear infinite"></span>
+              <span style="font-size:14px;color:var(--slate-500)">Preparing your gift…</span>
+            </sc-if>
+            <sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
+              <span style="display:inline-flex;width:64px;height:64px;border-radius:50%;background:var(--emerald-600);align-items:center;justify-content:center;animation:popIn .5s ease both">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <h3 style="margin:8px 0 0;font-size:24px;font-weight:600;letter-spacing:-.02em;color:var(--slate-900)">Thank you, {{ thanksName }}.</h3>
+              <p style="margin:0;font-size:14.5px;color:var(--slate-500)">{{ summaryLine }}</p>
+              <sc-if value="{{ hasHonor }}" hint-placeholder-val="{{ false }}">
+                <p style="margin:0;font-size:13px;font-style:italic;color:var(--emerald-700)">Dedicated {{ honorText }}</p>
+              </sc-if>
+              <p style="margin:6px 0 0;max-width:380px;font-size:13px;line-height:1.65;color:var(--slate-500)">A receipt is on its way to your inbox. You just moved a community forward — we’ll show you exactly how.</p>
+              <div style="padding-top:10px;width:100%;display:flex;justify-content:center">
+                <x-import component-from-global-scope="DesignSystem_54d3cd.Button" variant="secondary" size="lg" on-click="{{ close }}" hint-size="120px,48px">Done</x-import>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;campaignBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;},&quot;reduceMotion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;defaultFrequency&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;once&quot;,&quot;monthly&quot;],&quot;default&quot;:&quot;once&quot;,&quot;tsType&quot;:&quot;'once' | 'monthly'&quot;,&quot;section&quot;:&quot;Donate flow&quot;},&quot;statLives&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:12480,&quot;min&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Impact stats&quot;},&quot;statProjects&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:38,&quot;min&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Impact stats&quot;},&quot;statVolunteers&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:240,&quot;min&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Impact stats&quot;},&quot;statCountries&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:6,&quot;min&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Impact stats&quot;}}">
+class Component extends DCLogic {
+  state = {
+    active: 0,
+    detailFade: 1,
+    open: false,
+    step: 1,
+    preset: 100,
+    custom: '',
+    useCustom: false,
+    freq: null,
+    name: '',
+    email: '',
+    honor: '',
+    anon: false,
+    processing: false,
+    done: false,
+    counts: [0, 0, 0, 0],
+    subEmail: '',
+    subscribed: false,
+  };
+
+  PROGRAMS = [
+    {
+      title: 'Global Partnerships',
+      kicker: 'SDG ALLIANCES',
+      body: 'Global partnership for sustainable development goals and humanitarian initiatives — we team up with local and international organizations so every project lands where it is needed most, and stays there.',
+      tags: ['UN SDG-aligned', 'Cross-border programs'],
+    },
+    {
+      title: 'Health & Medical Outreach',
+      kicker: 'CARE THAT TRAVELS',
+      body: 'Collaborative health programs and medical outreach — mobile clinics, screenings and health education that bring care to families living far from the nearest hospital.',
+      tags: ['Mobile clinics', 'Health education'],
+    },
+    {
+      title: 'Microfinance & Livelihoods',
+      kicker: 'ECONOMIC DIGNITY',
+      body: 'Financial services and microfinance programs for community development — small loans, savings groups and business training that help families build steady, independent incomes.',
+      tags: ['Small loans', 'Savings groups'],
+    },
+    {
+      title: 'Education & Scholarships',
+      kicker: 'FUTURES IN CLASSROOMS',
+      body: 'Educational programs and scholarship initiatives for underprivileged children — school fees, supplies and mentorship that keep bright futures where they belong: in the classroom.',
+      tags: ['Scholarships', 'Mentorship'],
+    },
+    {
+      title: 'Environment & Climate',
+      kicker: 'A LIVABLE TOMORROW',
+      body: 'Environmental conservation and sustainability projects — tree planting, clean-water protection and climate-smart farming, led by the communities who depend on them.',
+      tags: ['Conservation', 'Climate-smart farming'],
+    },
+  ];
+
+  IMPACTS = {
+    25: '$25 packs school supplies for two children.',
+    50: '$50 fills a family food basket for two weeks.',
+    100: '$100 covers a village visit by our mobile clinic.',
+    250: '$250 seeds a microloan that starts a small business.',
+  };
+
+  componentDidMount() {
+    this._timers = [];
+    this.animateCounters();
+    this.setupReveals();
+    this._esc = (e) => { if (e.key === 'Escape' && this.state.open) this.closeModal(); };
+    window.addEventListener('keydown', this._esc);
+  }
+
+  componentWillUnmount() {
+    (this._timers || []).forEach(clearTimeout);
+    if (this._raf) cancelAnimationFrame(this._raf);
+    if (this._io) this._io.disconnect();
+    window.removeEventListener('keydown', this._esc);
+    document.body.style.overflow = '';
+  }
+
+  targets() {
+    const p = this.props;
+    return [p.statLives ?? 12480, p.statProjects ?? 38, p.statVolunteers ?? 240, p.statCountries ?? 6];
+  }
+
+  animateCounters() {
+    const t = this.targets();
+    if (this.props.reduceMotion) { this.setState({ counts: t }); return; }
+    const start = performance.now();
+    const dur = 1700;
+    const tick = (now) => {
+      const k = Math.min(1, (now - start) / dur);
+      const e = 1 - Math.pow(1 - k, 3);
+      this.setState({ counts: t.map((v) => Math.round(v * e)) });
+      if (k < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._timers.push(setTimeout(() => { this._raf = requestAnimationFrame(tick); }, 350));
+  }
+
+  setupReveals() {
+    if (this.props.reduceMotion) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const vh = window.innerHeight;
+    const below = els.filter((el) => el.getBoundingClientRect().top > vh * 0.88);
+    below.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(26px)';
+      el.style.transition = 'opacity .7s ease, transform .7s ease';
+    });
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'translateY(0)';
+          this._io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    below.forEach((el) => this._io.observe(el));
+  }
+
+  selectProgram(i) {
+    if (i === this.state.active) return;
+    this.setState({ detailFade: 0 });
+    this._timers.push(setTimeout(() => this.setState({ active: i, detailFade: 1 }), 160));
+  }
+
+  openDonate(preset) {
+    const patch = { open: true, step: 1, processing: false, done: false };
+    if (typeof preset === 'number') { patch.preset = preset; patch.useCustom = false; patch.custom = ''; }
+    this.setState(patch);
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeModal() {
+    document.body.style.overflow = '';
+    if (this.state.done) {
+      this.setState({ open: false, step: 1, processing: false, done: false, name: '', email: '', honor: '', anon: false, custom: '', useCustom: false, preset: 100, freq: null });
+    } else {
+      this.setState({ open: false });
+    }
+  }
+
+  effAmount() {
+    if (this.state.useCustom) {
+      const v = parseFloat(this.state.custom);
+      return isNaN(v) || v <= 0 ? 0 : v;
+    }
+    return this.state.preset;
+  }
+
+  fmt(v) {
+    return '$' + (Number.isInteger(v) ? v.toLocaleString('en-US') : v.toFixed(2));
+  }
+
+  effFreq() {
+    return this.state.freq ?? (this.props.defaultFrequency === 'monthly' ? 'monthly' : 'once');
+  }
+
+  emailOk(v) { return /.+@.+\..+/.test(v); }
+
+  goNext() {
+    const { step } = this.state;
+    if (step === 1 && this.effAmount() > 0) this.setState({ step: 2 });
+    else if (step === 2) this.setState({ step: 3 });
+    else if (step === 3 && this.state.name.trim() && this.emailOk(this.state.email)) {
+      this.setState({ step: 4, processing: true, done: false });
+      this._timers.push(setTimeout(() => this.setState({ processing: false, done: true }), 1100));
+    }
+  }
+
+  renderVals() {
+    const s = this.state;
+    const amt = this.effAmount();
+    const freq = this.effFreq();
+    const emerald = 'var(--emerald-600)';
+    const activeP = this.PROGRAMS[s.active];
+
+    const programs = this.PROGRAMS.map((p, i) => {
+      const on = i === s.active;
+      return {
+        n: '0' + (i + 1),
+        title: p.title,
+        select: () => this.selectProgram(i),
+        numColor: on ? emerald : 'var(--slate-400)',
+        titleColor: on ? 'var(--slate-900)' : 'var(--slate-400)',
+        arrowOpacity: on ? '1' : '0',
+        rowShift: on ? 'translateX(10px)' : 'translateX(0px)',
+      };
+    });
+
+    const presets = [25, 50, 100, 250].map((v) => {
+      const sel = !s.useCustom && s.preset === v;
+      return {
+        label: this.fmt(v),
+        impact: this.IMPACTS[v].replace(/^\$\d+ /, ''),
+        pick: () => this.setState({ preset: v, useCustom: false, custom: '' }),
+        bg: sel ? 'var(--emerald-50)' : '#ffffff',
+        border: sel ? '2px solid var(--emerald-600)' : '1px solid var(--slate-200)',
+      };
+    });
+
+    const selStyle = { on: { bg: 'var(--emerald-50)', border: '2px solid var(--emerald-600)' }, off: { bg: '#ffffff', border: '1px solid var(--slate-200)' } };
+    const onceSel = freq === 'once' ? selStyle.on : selStyle.off;
+    const monSel = freq === 'monthly' ? selStyle.on : selStyle.off;
+
+    const impactLine = s.useCustom
+      ? (amt > 0 ? `Every dollar of your ${this.fmt(amt)} goes where it's needed most.` : 'Enter an amount to see its impact.')
+      : this.IMPACTS[s.preset];
+
+    let continueLabel = 'Continue';
+    let nextDisabled = false;
+    if (s.step === 1) { continueLabel = amt > 0 ? `Continue with ${this.fmt(amt)}` : 'Choose an amount'; nextDisabled = amt <= 0; }
+    if (s.step === 3) { continueLabel = `Complete ${freq === 'monthly' ? 'monthly' : 'one-time'} gift · ${this.fmt(amt)}`; nextDisabled = !(s.name.trim() && this.emailOk(s.email)); }
+
+    const segOn = emerald, segOff = 'var(--slate-200)';
+    const labOn = 'var(--slate-900)', labOff = 'var(--slate-400)';
+
+    return {
+      campaignBar: this.props.campaignBar ?? true,
+
+      stat0: s.counts[0].toLocaleString('en-US') + '+',
+      stat1: String(s.counts[1]),
+      stat2: String(s.counts[2]) + '+',
+      stat3: String(s.counts[3]),
+
+      programs,
+      activeTitle: activeP.title,
+      activeKicker: activeP.kicker,
+      activeBody: activeP.body,
+      activeTags: activeP.tags,
+      detailOpacity: String(s.detailFade),
+
+      bandChips: [50, 100, 250].map((v) => ({ label: '$' + v, go: () => this.openDonate(v) })),
+
+      open: s.open,
+      s1: s.step === 1, s2: s.step === 2, s3: s.step === 3, s4: s.step === 4,
+      showProgress: s.step < 4,
+      seg1: s.step >= 1 ? segOn : segOff,
+      seg2: s.step >= 2 ? segOn : segOff,
+      seg3: s.step >= 3 ? segOn : segOff,
+      lab1: s.step === 1 ? labOn : labOff,
+      lab2: s.step === 2 ? labOn : labOff,
+      lab3: s.step === 3 ? labOn : labOff,
+
+      presets,
+      custom: s.custom,
+      setCustom: (e) => this.setState({ custom: e.target.value, useCustom: true }),
+      focusCustom: () => this.setState({ useCustom: true }),
+      impactLine,
+
+      onceBg: onceSel.bg, onceBorder: onceSel.border,
+      monthlyBg: monSel.bg, monthlyBorder: monSel.border,
+      pickOnce: () => this.setState({ freq: 'once' }),
+      pickMonthly: () => this.setState({ freq: 'monthly' }),
+      freqLine: freq === 'monthly' ? `${this.fmt(amt)} a month keeps programs running all year.` : 'One-time gifts fund the most urgent needs first.',
+
+      name: s.name, email: s.email, honor: s.honor, anon: s.anon,
+      setName: (e) => this.setState({ name: e.target.value }),
+      setEmail: (e) => this.setState({ email: e.target.value }),
+      setHonor: (e) => this.setState({ honor: e.target.value }),
+      toggleAnon: (e) => this.setState({ anon: e.target.checked }),
+
+      processing: s.processing,
+      done: s.done,
+      thanksName: s.anon ? 'friend' : (s.name.trim().split(' ')[0] || 'friend'),
+      summaryLine: `${this.fmt(amt)} · ${freq === 'monthly' ? 'Monthly' : 'One-time'} gift to Heart for Humanity Initiative`,
+      hasHonor: !!s.honor.trim(),
+      honorText: s.honor.trim() ? `in honor of ${s.honor.trim()}` : '',
+
+      continueLabel, nextDisabled,
+      goNext: () => this.goNext(),
+      goBack: () => this.setState({ step: Math.max(1, s.step - 1) }),
+      openDonateNow: () => this.openDonate(),
+      close: () => this.closeModal(),
+      stopCard: (e) => e.stopPropagation(),
+      goSupport: () => { location.hash = '#support'; },
+      mailVolunteer: () => { location.href = 'mailto:hello@heart4humanityinitiative.org?subject=Volunteering'; },
+      mailPartner: () => { location.href = 'mailto:hello@heart4humanityinitiative.org?subject=Partnership'; },
+
+      subEmail: s.subEmail,
+      setSubEmail: (e) => this.setState({ subEmail: e.target.value }),
+      subscribe: () => { if (this.emailOk(s.subEmail)) this.setState({ subscribed: true }); },
+      subDisabled: !this.emailOk(s.subEmail),
+      subscribed: s.subscribed,
+      notSubscribed: !s.subscribed,
+    };
+  }
+}
+</script>
+</body>
+</html>
