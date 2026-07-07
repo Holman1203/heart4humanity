@@ -418,27 +418,16 @@ button, input, textarea { font-family: var(--font-sans); }
   padding-bottom: 40px;
 }
 .hero__text { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; max-width: 760px; }
-.hero__kicker {
-  display: inline-flex; align-items: center; gap: 9px;
-  background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .3);
-  border-radius: var(--radius-full); padding: 7px 16px;
-  color: #fff; font-size: 11.5px; font-weight: 700; letter-spacing: .18em;
-  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-}
 .hero__title {
   margin: 0; color: #ffffff; font-size: clamp(36px, 5vw, 66px);
   line-height: 1.08; font-weight: 700; letter-spacing: -.03em; text-wrap: balance;
+  min-height: 2.2em;
 }
+.hero__title em { font-style: italic; font-weight: 400; color: var(--blue-300); }
 .hero__lede { margin: 0; max-width: 600px; color: rgba(255, 255, 255, .82); font-size: 17px; line-height: 1.65; text-wrap: pretty; }
 .hero__cta { display: flex; align-items: center; gap: 14px; padding-top: 8px; flex-wrap: wrap; }
 
 .hero__slider-nav { display: flex; align-items: center; gap: 16px; margin-top: 44px; }
-.hero__arrow {
-  display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%;
-  background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .3); color: #fff; cursor: pointer;
-  transition: background .15s, border-color .15s;
-}
-.hero__arrow:hover { background: rgba(255, 255, 255, .22); border-color: rgba(255, 255, 255, .5); }
 .hero__bars { display: flex; align-items: center; gap: 8px; }
 .hero__bar { width: 34px; height: 3px; border: none; padding: 0; border-radius: 2px; background: rgba(255, 255, 255, .28); overflow: hidden; cursor: pointer; }
 .hero__bar span { display: block; height: 100%; width: 100%; background: var(--blue-400); transform: scaleX(0); transform-origin: left; }
@@ -584,6 +573,8 @@ button, input, textarea { font-family: var(--font-sans); }
 .dash-card__label { color: rgba(255, 255, 255, .72); font-size: 12.5px; font-weight: 500; }
 .dash-card__bar { height: 6px; border-radius: var(--radius-full); background: rgba(255, 255, 255, .16); overflow: hidden; margin-top: 4px; }
 .dash-card__bar-fill { height: 100%; border-radius: var(--radius-full); background: var(--blue-300); width: 0; transition: width 1.2s ease; }
+.dash-card__goal { color: rgba(255, 255, 255, .6); font-size: 11.5px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.dash-card__goal strong { color: var(--blue-300); font-weight: 700; }
 
 /* ============================================================
    INTERACTIVE MAP

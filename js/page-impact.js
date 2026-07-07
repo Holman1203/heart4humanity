@@ -4,14 +4,14 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var DASHBOARD = [
-    { num: 512300, label: 'People reached', max: 600000 },
+    { num: 512300, label: 'People reached', max: 600000, suffix: '+' },
     { num: 186, label: 'Communities served', max: 220 },
-    { num: 128400, label: 'Women supported', max: 150000 },
-    { num: 64200, label: 'Children enrolled', max: 80000 },
+    { num: 128400, label: 'Women supported', max: 150000, suffix: '+' },
+    { num: 64200, label: 'Children enrolled', max: 80000, suffix: '+' },
     { num: 42, label: 'Health facilities supported', max: 50 },
     { num: 96, label: 'Water points constructed', max: 120 },
     { num: 31, label: 'Schools rehabilitated', max: 40 },
-    { num: 18700, label: 'Nutrition recoveries', max: 22000 }
+    { num: 18700, label: 'Nutrition recoveries', max: 22000, suffix: '+' }
   ];
 
   var STATES = [
@@ -38,7 +38,11 @@
     var pct = Math.min(100, Math.round((d.num / d.max) * 100));
     var card = document.createElement('div');
     card.className = 'dash-card';
-    card.innerHTML = '<span class="dash-card__num" data-count="' + d.num + '">0</span><span class="dash-card__label">' + d.label + '</span><div class="dash-card__bar"><div class="dash-card__bar-fill" data-width="' + pct + '%"></div></div>';
+    card.innerHTML =
+      '<span class="dash-card__num" data-count="' + d.num + '"' + (d.suffix ? ' data-suffix="' + d.suffix + '"' : '') + '>0</span>' +
+      '<span class="dash-card__label">' + d.label + '</span>' +
+      '<div class="dash-card__bar"><div class="dash-card__bar-fill" data-width="' + pct + '%"></div></div>' +
+      '<span class="dash-card__goal"><strong>' + pct + '%</strong> of ' + d.max.toLocaleString('en-US') + ' goal</span>';
     dashboardGrid.appendChild(card);
   });
   var dashIo = new IntersectionObserver(function (entries) {

@@ -22,13 +22,13 @@
      DATA
      ============================================================ */
   var HERO_SLIDES = [
-    { kicker: 'EDUCATION', image: 'assets/photo-education.jpg', alt: 'Children learning in a classroom' },
-    { kicker: 'WASH', image: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1600&q=80', alt: 'Clean water access project' },
-    { kicker: 'HEALTH', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80', alt: 'Community healthcare outreach' },
-    { kicker: 'NUTRITION', image: 'https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=1600&q=80', alt: 'Nutrition support activity for children' },
-    { kicker: 'PROTECTION', image: 'assets/photo-training.jpg', alt: 'Community protection and empowerment session' },
-    { kicker: 'EMERGENCY RESPONSE', image: 'assets/photo-relief.jpg', alt: 'Emergency relief distribution to displaced families' },
-    { kicker: 'FSL', image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1600&q=80', alt: 'Food security and livelihoods support' }
+    { kicker: 'EDUCATION', title: 'Every child deserves <em>a classroom.</em>', image: 'assets/photo-education.jpg', alt: 'Children learning in a classroom' },
+    { kicker: 'WASH', title: 'Clean water <em>changes everything.</em>', image: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1600&q=80', alt: 'Clean water access project' },
+    { kicker: 'HEALTH', title: 'Care that reaches <em>the last mile.</em>', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80', alt: 'Community healthcare outreach' },
+    { kicker: 'NUTRITION', title: 'Every child, <em>nourished to thrive.</em>', image: 'https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=1600&q=80', alt: 'Nutrition support activity for children' },
+    { kicker: 'PROTECTION', title: 'Safety and dignity <em>for every family.</em>', image: 'assets/photo-training.jpg', alt: 'Community protection and empowerment session' },
+    { kicker: 'EMERGENCY RESPONSE', title: 'There <em>when crisis strikes.</em>', image: 'assets/photo-relief.jpg', alt: 'Emergency relief distribution to displaced families' },
+    { kicker: 'FSL', title: 'From relief today <em>to lasting income.</em>', image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1600&q=80', alt: 'Food security and livelihoods support' }
   ];
 
   var THEMATIC = [
@@ -90,7 +90,7 @@
      HERO — humanitarian slider
      ============================================================ */
   var heroSlidesEl = document.getElementById('hero-slides');
-  var heroKicker = document.getElementById('hero-kicker');
+  var heroTitle = document.getElementById('hero-title');
   var heroBars = document.getElementById('hero-bars');
   var activeHero = 0;
   var heroTimer = null;
@@ -111,18 +111,21 @@
     heroBars.appendChild(bar);
   });
 
-  function renderHero(i) {
-    heroKicker.textContent = HERO_SLIDES[i].kicker;
+  function renderHero(i, animate) {
+    heroTitle.innerHTML = HERO_SLIDES[i].title;
+    if (animate && !reduceMotion) {
+      heroTitle.style.animation = 'none';
+      void heroTitle.offsetWidth;
+      heroTitle.style.animation = 'fadeUp .6s ease both';
+    }
     var slides = heroSlidesEl.children;
     for (var k = 0; k < slides.length; k++) slides[k].classList.toggle('is-active', k === i);
     var bars = heroBars.children;
     for (var b = 0; b < bars.length; b++) { bars[b].classList.toggle('is-active', b === i); bars[b].classList.toggle('is-done', b < i); }
   }
-  function showHero(i, user) { activeHero = (i + HERO_SLIDES.length) % HERO_SLIDES.length; renderHero(activeHero); if (user) restartHero(); }
+  function showHero(i, user) { activeHero = (i + HERO_SLIDES.length) % HERO_SLIDES.length; renderHero(activeHero, true); if (user) restartHero(); }
   function restartHero() { clearInterval(heroTimer); if (!reduceMotion) heroTimer = setInterval(function () { showHero(activeHero + 1, false); }, 6000); }
-  document.getElementById('hero-prev').addEventListener('click', function () { showHero(activeHero - 1, true); });
-  document.getElementById('hero-next').addEventListener('click', function () { showHero(activeHero + 1, true); });
-  renderHero(0);
+  renderHero(0, false);
   restartHero();
 
   /* ============================================================
