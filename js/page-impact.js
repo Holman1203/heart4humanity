@@ -44,6 +44,7 @@
       '<span class="dash-card__goal"><strong>' + pct + '%</strong> of ' + d.max.toLocaleString('en-US') + ' goal</span>';
     dashboardGrid.appendChild(card);
   });
+  if (window.H4H.scanCounters) window.H4H.scanCounters();
   var dashIo = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (en.isIntersecting) { document.querySelectorAll('.dash-card__bar-fill').forEach(function (bar) { bar.style.width = bar.dataset.width; }); dashIo.disconnect(); }

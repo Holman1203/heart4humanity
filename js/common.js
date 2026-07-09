@@ -86,9 +86,10 @@
   }
   window.H4H.animateOne = animateOne;
 
-  (function setupCounters() {
-    var nums = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+  function scanCounters() {
+    var nums = Array.prototype.slice.call(document.querySelectorAll('[data-count]:not([data-counted])'));
     if (!nums.length) return;
+    nums.forEach(function (el) { el.dataset.counted = '1'; });
     if (reduceMotion || !('IntersectionObserver' in window)) { nums.forEach(animateOne); return; }
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -96,7 +97,9 @@
       });
     }, { threshold: 0.4 });
     nums.forEach(function (el) { io.observe(el); });
-  })();
+  }
+  window.H4H.scanCounters = scanCounters;
+  scanCounters();
 
   /* ============================================================
      SCROLL REVEALS — any [data-reveal] element

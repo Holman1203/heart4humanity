@@ -196,6 +196,7 @@
     card.innerHTML = '<span class="dash-card__num" data-count="' + d.num + '">0</span><span class="dash-card__label">' + d.label + '</span>';
     dashboardGrid.appendChild(card);
   });
+  if (window.H4H.scanCounters) window.H4H.scanCounters();
 
   /* ============================================================
      SUCCESS STORIES — carousel + video modal
