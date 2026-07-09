@@ -263,6 +263,12 @@
       if (firstBtn) firstBtn.focus();
     }
     window.H4H.openDonate = openDonate;
+    window.H4H.openDonateAmount = function (amount) {
+      donation.useCustom = true;
+      donation.custom = String(amount);
+      customInput.value = String(amount);
+      openDonate();
+    };
 
     function closeModal() {
       clearTimeout(processTimer);

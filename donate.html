@@ -76,38 +76,59 @@
 
 <main id="main">
 
-<section class="donate-section" style="scroll-margin-top:100px;padding-top:calc(var(--nav-h) + 70px)">
-  <div class="container donate__grid">
-    <div class="donate__copy" data-reveal>
-      <span class="kicker kicker--light">MAKE A DIFFERENCE</span>
-      <h2 class="section-title section-title--light">Your gift, calculated in impact.</h2>
-      <p class="section-lede section-lede--light">Move the slider to see exactly what your generosity makes possible — then choose how you'd like to give.</p>
-      <div class="calculator">
-        <div class="calculator__amount"><span id="calc-amount">₦25,000</span></div>
-        <input type="range" id="calc-slider" min="5000" max="300000" step="5000" value="25000" aria-label="Donation amount calculator">
-        <p class="calculator__impact" id="calc-impact"></p>
+<section class="page-section" style="scroll-margin-top:100px;padding-top:calc(var(--nav-h) + 50px)">
+  <div class="container impact__grid">
+    <div class="impact-card" data-reveal>
+      <h2 class="impact-card__title">Choose Your Impact</h2>
+      <p class="impact-card__sub">All amounts in Nigerian Naira (₦).</p>
+      <div class="impact-tiles" id="impact-tiles"></div>
+      <div id="impact-custom-wrap" hidden>
+        <div class="ds-input-group" style="margin-top:12px"><span class="ds-input-addon ds-input-addon--text">₦</span><input class="ds-input" id="impact-custom" type="number" min="500" placeholder="Enter amount"></div>
       </div>
-      <div class="donate__bank">
-        <span class="donate__bank-label">Prefer a direct transfer?</span>
-        <span class="donate__bank-value">Contact us for bank account details, corporate giving, or emergency-appeal wire transfers.</span>
+      <div class="impact-banner" id="impact-banner"></div>
+
+      <span class="impact-card__label">PAYMENT METHOD</span>
+      <div class="impact-methods" id="impact-methods"></div>
+
+      <div class="impact-bank" id="impact-bank" hidden>
+        <span class="impact-bank__title">Send your gift by direct bank transfer</span>
+        <div class="impact-bank__row"><span class="impact-bank__label">Account Number</span><span class="impact-bank__value">1028538229</span><button class="impact-bank__copy" type="button" data-copy="1028538229" aria-label="Copy account number">Copy</button></div>
+        <div class="impact-bank__row"><span class="impact-bank__label">Account Name</span><span class="impact-bank__value">HEART FOR HUMANITY INITIATIVE</span></div>
+        <div class="impact-bank__row"><span class="impact-bank__label">Bank</span><span class="impact-bank__value">United Bank for Africa (UBA)</span></div>
+        <p class="impact-bank__note">After sending your transfer, please email a copy of your receipt to <a href="mailto:info@heart4humanityinitiative.org">info@heart4humanityinitiative.org</a> so we can confirm and send you a receipt.</p>
       </div>
+
+      <div class="impact-secure" id="impact-secure">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+        <span>Secured by Paystack — bank-grade encryption</span>
+      </div>
+      <button class="ds-btn ds-btn--primary ds-btn--lg ds-btn--block ds-btn--gradient" id="impact-cta"></button>
     </div>
-    <div class="donate__panel" data-reveal>
-      <div class="donate__tabs" role="tablist" aria-label="Donation type">
-        <button class="donate__tab is-active" data-donate-tab="once">One-time</button>
-        <button class="donate__tab" data-donate-tab="monthly">Monthly</button>
-        <button class="donate__tab" data-donate-tab="emergency">Emergency</button>
-        <button class="donate__tab" data-donate-tab="corporate">Corporate</button>
+
+    <div class="impact-side" data-reveal>
+      <div class="impact-why">
+        <h3>Why Give to HHI?</h3>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>100% of program funds go directly to beneficiaries</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Verified by our institutional and community partners</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Quarterly impact reports sent to all donors</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Registered national NGO · Federal Republic of Nigeria</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Bank-grade secure payment via Paystack</span></li>
+        </ul>
       </div>
-      <div class="donate__tab-body" id="donate-tab-body"></div>
-      <div class="donate__presets" id="donate-panel-presets"></div>
-      <button class="ds-btn ds-btn--primary ds-btn--lg ds-btn--block ds-btn--gradient" id="donate-panel-cta" data-donate>Donate Now</button>
-      <span class="donate__note">Secure demo checkout — online payment integration connects here.</span>
+      <blockquote class="impact-quote">
+        <p>“Your support is a direct investment in a child's chance at a dignified life.”</p>
+        <cite>— Hyelafiya Sani Hassan, Executive Director</cite>
+      </blockquote>
+      <div class="donate__bank" style="margin-top:24px">
+        <span class="donate__bank-label" style="color:var(--text)">Giving monthly, corporately, or for our emergency appeal?</span>
+        <span class="donate__bank-value" style="color:var(--text-muted)">Email <a href="mailto:info@heart4humanityinitiative.org">info@heart4humanityinitiative.org</a> or <a href="contact.html">contact us</a> and our team will help set it up.</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="page-section">
+<section class="page-section page-section--alt page-section--border-top">
   <div class="container">
     <div class="section-head section-head--center" data-reveal>
       <span class="kicker">FREQUENTLY ASKED</span>
@@ -119,9 +140,9 @@
       <h3>Can I choose which programme my gift supports?</h3>
       <p>Yes — Health, Nutrition, WASH, Education, Protection and FSL each have their own donate option on their programme pages, or you can give generally and we'll direct it to the area of greatest need.</p>
       <h3>How do I set up a monthly gift?</h3>
-      <p>Choose "Monthly" above, pick an amount, and follow the checkout steps. You can update or cancel a recurring gift any time by contacting us.</p>
+      <p>Choose a monthly amount above, or email us to set up recurring giving. You can update or cancel a recurring gift any time by contacting us.</p>
       <h3>Do you accept bank transfers or corporate gifts?</h3>
-      <p>Yes. Select "Corporate" above or <a href="contact.html">contact us</a> directly and our team will share account details and next steps.</p>
+      <p>Yes. Select "Bank" as your payment method above for our direct transfer details, or <a href="contact.html">contact us</a> for corporate partnerships and emergency-appeal wire transfers.</p>
     </div>
   </div>
 </section>

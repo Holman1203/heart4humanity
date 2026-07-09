@@ -6,7 +6,7 @@
     { src: 'assets/photo-education.jpg', cat: 'education', caption: 'Classroom session, Borno State' },
     { src: 'assets/photo-training.jpg', cat: 'fsl', caption: 'Vocational training graduation' },
     { src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80', cat: 'health', caption: 'Mobile clinic outreach' },
-    { src: 'https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=900&q=80', cat: 'nutrition', caption: 'Nutrition screening for children' },
+    { src: 'https://images.unsplash.com/photo-1694286068158-836b3aec0599?auto=format&fit=crop&w=900&q=80', cat: 'nutrition', caption: 'Nutrition screening for children' },
     { src: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80', cat: 'wash', caption: 'Community borehole rehabilitation' },
     { src: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=900&q=80', cat: 'protection', caption: 'Community support session' },
     { src: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=900&q=80', cat: 'fsl', caption: 'Small business supported by a microloan' },
