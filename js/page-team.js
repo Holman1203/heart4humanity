@@ -13,26 +13,25 @@
     {
       group: 'Leadership',
       members: [
-        { name: 'Rebecca Yakubu', role: 'Executive Director', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/pc.jpeg', bio: 'Leads HHI’s strategy, partnerships and organisational growth as a women-led, youth-driven non-profit.', bioFull: 'Rebecca sets the strategic direction for Heart for Humanity Initiative, builds relationships with donors and government partners, and champions a women-led, youth-driven model for humanitarian response across the Northeast and Northwest.', tags: ['Strategy', 'Partnerships', 'Governance'] },
-        { name: 'Hyelafiya Sani', role: 'Head of Office & Programmes', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/sani.jpeg', bio: 'Oversees programme design and delivery across all thematic sectors and field locations.', bioFull: 'Hyelafiya leads day-to-day programme design, quality and delivery across Health, Nutrition, WASH, Education, Protection, FSL and Peacebuilding, coordinating field teams across all seven states of operation.', tags: ['Programme Design', 'Field Operations', 'MEAL'], phone: '+2348038666193' }
+        { name: 'Hyelafiya Sani Hassan', role: 'Executive Director', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/ed.jpeg', bio: 'Leads HHI’s strategy, partnerships and organisational growth as a women-led, youth-driven non-profit.', bioFull: 'Hyelafiya sets the strategic direction for Heart for Humanity Initiative, builds relationships with donors and government partners, and champions a women-led, youth-driven model for humanitarian response across the Northeast and Northwest.', tags: ['Strategy', 'Partnerships', 'Governance'] },
+        { name: 'Janada John', role: 'Programme Manager', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/pm.jpeg', bio: 'Oversees programme planning, quality and cross-sector coordination.', bioFull: 'Janada oversees programme planning, quality assurance and cross-sector coordination, working closely with thematic leads to keep delivery on track across all seven states of operation.', tags: ['Programme Planning', 'Quality Assurance', 'Coordination'] }
       ]
     },
     {
       group: 'Programmes',
       members: [
-        { name: 'Aisha Bukar', role: 'Health Lead', location: 'Maiduguri, Borno', tenure: 'Since 2025', bio: 'Coordinates mobile clinics, screenings and primary health outreach.', bioFull: 'Aisha coordinates HHI’s mobile clinics, health screenings and primary healthcare outreach, working closely with state health authorities to reach underserved communities.', tags: ['Primary Healthcare', 'Mobile Clinics', 'Immunisation'] },
+        { name: 'Dr. Grace Daniel', role: 'Health Lead', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/gd.jpeg', bio: 'Leads mobile clinics, screenings and primary health outreach.', bioFull: 'Dr. Grace coordinates HHI’s mobile clinics, health screenings and primary healthcare outreach, working closely with state health authorities to bring quality care to underserved communities.', tags: ['Primary Healthcare', 'Mobile Clinics', 'Immunisation'] },
         { name: 'Grace Adamu', role: 'Nutrition Lead', location: 'Konduga, Borno', tenure: 'Since 2025', bio: 'Leads community-based malnutrition screening and therapeutic feeding.', bioFull: 'Grace leads community-based management of acute malnutrition, running screening drives and therapeutic feeding programmes for children under five and pregnant and lactating women.', tags: ['Malnutrition Screening', 'IYCF', 'Therapeutic Feeding'] },
-        { name: 'Ibrahim Modu', role: 'WASH Lead', location: 'Bama, Borno', tenure: 'Since 2025', bio: 'Manages clean water, sanitation and hygiene promotion in camps and host communities.', bioFull: 'Ibrahim manages the construction and rehabilitation of water points, latrines and hygiene promotion campaigns across displacement camps and host communities.', tags: ['Water Systems', 'Hygiene Promotion', 'Sanitation'] },
-        { name: 'Fatima Bello', role: 'Education Lead', location: 'Yola, Adamawa', tenure: 'Since 2025', bio: 'Runs scholarships, learning materials and girls’ retention programmes.', bioFull: 'Fatima runs HHI’s scholarship scheme, learning-materials distribution and girls’ retention initiatives, working with schools to keep conflict-affected children in class.', tags: ['Girls’ Education', 'Scholarships', 'Learning Materials'] },
-        { name: 'Zainab Musa', role: 'Protection Lead', location: 'Jere, Borno', tenure: 'Since 2025', bio: 'Directs case management, psychosocial support and safe spaces.', bioFull: 'Zainab directs case management, psychosocial support and safe-space programming for survivors of violence and vulnerable children across HHI’s protection sites.', tags: ['Case Management', 'GBV Response', 'Psychosocial Support'] },
-        { name: 'Emmanuel Yusuf', role: 'Food Security & Livelihoods Lead', location: 'Dikwa, Borno', tenure: 'Since 2025', photo: 'assets/Team/pm.jpeg', bio: 'Leads food distribution, savings groups and vocational training.', bioFull: 'Emmanuel leads food and cash distributions, village savings and loan associations, and vocational training that helps households rebuild sustainable livelihoods.', tags: ['Food Distribution', 'Livelihoods', 'VSLA'] },
+        { name: 'Ndihyelia Sani', role: 'WASH & Food Security and Livelihoods Coordinator', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/fsl.jpeg', bio: 'Leads clean water, sanitation, food distribution and livelihoods support.', bioFull: 'Ndihyelia coordinates water point construction, sanitation and hygiene promotion alongside food distributions, savings groups and vocational training — helping households recover both health and income.', tags: ['Water & Sanitation', 'Food Distribution', 'Livelihoods'] },
+        { name: 'Japari Hyelafiya', role: 'Education Officer', location: 'Yola, Adamawa', tenure: 'Since 2025', photo: 'assets/Team/ef.jpeg', bio: 'Runs scholarships, learning materials and girls’ retention programmes.', bioFull: 'Japari runs HHI’s scholarship scheme, learning-materials distribution and girls’ retention initiatives, working with schools to keep conflict-affected children in class.', tags: ['Girls’ Education', 'Scholarships', 'Learning Materials'] },
+        { name: 'Zainab Musa', role: 'Protection Coordinator', location: 'Jere, Borno', tenure: 'Since 2025', photo: 'assets/Team/pc.jpeg', bio: 'Directs case management, psychosocial support and safe spaces.', bioFull: 'Zainab directs case management, psychosocial support and safe-space programming for survivors of violence and vulnerable children across HHI’s protection sites.', tags: ['Case Management', 'GBV Response', 'Psychosocial Support'] },
         { name: 'Maryam Ali', role: 'Peacebuilding Lead', location: 'Dikwa, Borno', tenure: 'Since 2025', bio: 'Facilitates dialogue, youth engagement and trauma-healing initiatives.', bioFull: 'Maryam facilitates inter-community dialogue forums, youth engagement programmes and trauma-healing initiatives that help conflict-affected communities rebuild trust.', tags: ['Dialogue Facilitation', 'Youth Engagement', 'Trauma Healing'] }
       ]
     },
     {
       group: 'Operations & Support',
       members: [
-        { name: 'Halima Kolo', role: 'HR & Admin Coordinator', location: 'Maiduguri, Borno', tenure: 'Since 2025', bio: 'Supports recruitment, welfare and day-to-day operations.', bioFull: 'Halima manages recruitment, staff welfare and day-to-day administration, keeping HHI’s growing team supported and its offices running smoothly.', tags: ['Recruitment', 'Staff Welfare', 'Policy'] },
+        { name: 'Wandu Zira', role: 'HR Coordinator', location: 'Maiduguri, Borno', tenure: 'Since 2025', photo: 'assets/Team/HR.jpeg', bio: 'Supports recruitment, staff welfare and day-to-day HR operations.', bioFull: 'Wandu coordinates recruitment, staff welfare and day-to-day human resources administration, keeping HHI’s growing team supported across all field locations.', tags: ['Recruitment', 'Staff Welfare', 'Policy'] },
         { name: 'Samuel Dauda', role: 'Finance Coordinator', location: 'Maiduguri, Borno', tenure: 'Since 2025', bio: 'Manages budgets, reporting and financial accountability.', bioFull: 'Samuel manages programme budgets, donor financial reporting and internal controls, ensuring every naira is accounted for and well spent.', tags: ['Budgeting', 'Compliance', 'Donor Reporting'] },
         { name: 'Musa Hassan', role: 'Logistics & Procurement Coordinator', location: 'Maiduguri, Borno', tenure: 'Since 2025', bio: 'Oversees supply chains and field logistics.', bioFull: 'Musa oversees procurement, warehousing and fleet management, keeping supplies moving reliably to hard-to-reach field locations.', tags: ['Supply Chain', 'Fleet Management', 'Procurement'] },
         { name: 'Esther John', role: 'MEAL Coordinator', location: 'Yola, Adamawa', tenure: 'Since 2025', bio: 'Leads monitoring, evaluation, accountability and learning.', bioFull: 'Esther leads monitoring, evaluation, accountability and learning across all programmes, turning field data into evidence that sharpens HHI’s response.', tags: ['M&E Systems', 'Data Quality', 'Learning'] },
@@ -68,45 +67,76 @@
     return '<span class="tprofile__initials">' + (m.vacant ? '+' : initials(m.name)) + '</span>';
   }
 
+  var leadershipGrid = document.getElementById('leadership-grid');
   var container = document.getElementById('team-container');
   var modal = document.getElementById('profile-modal');
 
-  TEAM.forEach(function (grp) {
+  function vacantCard(m, stagger) {
+    return '<div class="tprofile tprofile--vacant tprofile--staff" style="--stagger:' + stagger + 'ms">' +
+      '<div class="tprofile__photo">' + photoInner(m) + '</div>' +
+      '<div class="tprofile__body">' +
+        '<span class="tprofile__name">' + m.name + '</span>' +
+        '<span class="tprofile__role">' + m.role + '</span>' +
+        '<p class="tprofile__bio">' + m.bio + '</p>' +
+        '<div class="tprofile__foot"><a class="tprofile__email" href="careers.html">View openings</a><a class="tprofile__view" href="careers.html">Apply ' + ARROW + '</a></div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function leadCard(m, stagger) {
+    m.email = m.email || slugEmail(m.name);
+    return '<div class="tprofile tprofile--lead" data-open-profile="' + m.name + '" style="--stagger:' + stagger + 'ms">' +
+      '<div class="tprofile__photo">' + photoInner(m) + '<span class="tprofile__badge">' + m.role + '</span></div>' +
+      '<div class="tprofile__body">' +
+        '<span class="tprofile__name">' + m.name + '</span>' +
+        '<div class="tprofile__meta">' + PIN + '<span>' + m.location + ' · ' + m.tenure + '</span></div>' +
+        '<p class="tprofile__bio">' + m.bio + '</p>' +
+        '<div class="tprofile__foot">' +
+          '<a class="tprofile__email" href="mailto:' + m.email + '" data-stop-open>' + m.email + '</a>' +
+          '<span class="tprofile__view">View profile ' + ARROW + '</span>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function staffCard(m, stagger) {
+    m.email = m.email || slugEmail(m.name);
+    return '<div class="tprofile tprofile--staff" data-open-profile="' + m.name + '" style="--stagger:' + stagger + 'ms">' +
+      '<div class="tprofile__photo">' + photoInner(m) + '</div>' +
+      '<div class="tprofile__body">' +
+        '<span class="tprofile__name">' + m.name + '</span>' +
+        '<span class="tprofile__role">' + m.role + '</span>' +
+        '<div class="tprofile__foot"><a class="tprofile__email" href="mailto:' + m.email + '" data-stop-open>' + MAIL + '<span>' + m.email + '</span></a></div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  var LEADERSHIP = TEAM[0].members;
+  var STAFF_GROUPS = TEAM.slice(1);
+
+  if (leadershipGrid) {
+    leadershipGrid.innerHTML = LEADERSHIP.map(function (m, i) { return leadCard(m, i * 120); }).join('');
+  }
+
+  STAFF_GROUPS.forEach(function (grp) {
     var section = document.createElement('div');
     section.className = 'team-group';
     section.setAttribute('data-reveal', '');
 
     var head = '<div class="team-group__head"><span class="team-group__title">' + grp.group + '</span><span class="team-group__count">' + grp.members.length + (grp.members.length === 1 ? ' member' : ' members') + '</span></div>';
 
-    var cards = grp.members.map(function (m) {
-      if (m.vacant) {
-        return '<div class="tprofile tprofile--vacant">' +
-          '<div class="tprofile__photo">' + photoInner(m) + '<span class="tprofile__badge">' + m.role + '</span></div>' +
-          '<div class="tprofile__body">' +
-            '<span class="tprofile__name">' + m.name + '</span>' +
-            '<div class="tprofile__meta">' + PIN + '<span>' + m.location + ' · ' + m.tenure + '</span></div>' +
-            '<p class="tprofile__bio">' + m.bio + '</p>' +
-            '<div class="tprofile__foot"><a class="tprofile__email" href="careers.html">View openings</a><a class="tprofile__view" href="careers.html">Apply ' + ARROW + '</a></div>' +
-          '</div>' +
-        '</div>';
-      }
-      m.email = m.email || slugEmail(m.name);
-      return '<div class="tprofile" data-member="' + m.name + '">' +
-        '<div class="tprofile__photo" data-open-profile="' + m.name + '">' + photoInner(m) + '<span class="tprofile__badge">' + m.role + '</span></div>' +
-        '<div class="tprofile__body">' +
-          '<span class="tprofile__name">' + m.name + '</span>' +
-          '<div class="tprofile__meta">' + PIN + '<span>' + m.location + ' · ' + m.tenure + '</span></div>' +
-          '<p class="tprofile__bio">' + m.bio + '</p>' +
-          '<div class="tprofile__foot"><a class="tprofile__email" href="mailto:' + m.email + '">' + m.email + '</a><button class="tprofile__view" type="button" data-open-profile="' + m.name + '">View profile ' + ARROW + '</button></div>' +
-        '</div>' +
-      '</div>';
+    var cards = grp.members.map(function (m, i) {
+      return m.vacant ? vacantCard(m, i * 80) : staffCard(m, i * 80);
     }).join('');
 
-    section.innerHTML = head + '<div class="team-grid">' + cards + '</div>';
+    section.innerHTML = head + '<div class="staff-grid">' + cards + '</div>';
     container.appendChild(section);
   });
 
-  if (window.H4H && window.H4H.observeReveals) window.H4H.observeReveals(container);
+  if (window.H4H && window.H4H.observeReveals) {
+    window.H4H.observeReveals(container);
+    if (leadershipGrid) window.H4H.observeReveals(leadershipGrid.closest('.page-section'));
+  }
 
   var ALL_MEMBERS = TEAM.reduce(function (acc, grp) { return acc.concat(grp.members); }, []);
 
@@ -131,10 +161,10 @@
     document.body.style.overflow = '';
   }
 
-  container.addEventListener('click', function (e) {
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('[data-stop-open]')) return;
     var trigger = e.target.closest('[data-open-profile]');
     if (!trigger) return;
-    e.preventDefault();
     openProfile(trigger.getAttribute('data-open-profile'));
   });
 
