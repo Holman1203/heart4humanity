@@ -949,6 +949,65 @@ a.contact-info__value:hover { color: var(--blue-600); }
 .ops-note { text-align: center; color: var(--text-subtle); font-size: 13.5px; font-style: italic; margin: 28px 0 0; }
 @media (max-width: 768px) { .ops-grid { grid-template-columns: 1fr; } }
 
+/* ============================================================
+   TEAM
+   ============================================================ */
+.team-group { margin-top: 8px; }
+.team-group + .team-group { margin-top: 56px; }
+.team-group__head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+.team-group__title { font-family: var(--font-heading); font-size: 22px; font-weight: 700; letter-spacing: -.01em; color: var(--text); }
+.team-group__count { font-size: 12.5px; font-weight: 600; color: var(--blue-600); }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(288px, 1fr)); gap: 24px; }
+
+.tprofile {
+  display: flex; flex-direction: column; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-xl); padding: 12px 12px 4px; box-shadow: var(--shadow-sm);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.tprofile:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: var(--blue-200); }
+.tprofile__photo { position: relative; height: 236px; border-radius: var(--radius-lg); overflow: hidden; background: linear-gradient(140deg, var(--blue-600), var(--blue-400)); cursor: pointer; }
+.tprofile__photo img { width: 100%; height: 100%; object-fit: cover; }
+.tprofile__initials { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 60px; font-weight: 800; color: rgba(255, 255, 255, .92); letter-spacing: .02em; }
+.team-grid .tprofile:nth-child(3n+2) .tprofile__photo { background: linear-gradient(140deg, #0284c7, #38bdf8); }
+.team-grid .tprofile:nth-child(3n+3) .tprofile__photo { background: linear-gradient(140deg, #4f46e5, #818cf8); }
+.tprofile__badge { position: absolute; left: 14px; bottom: 14px; background: var(--blue-700); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 6px 13px; border-radius: var(--radius-full); box-shadow: var(--shadow-md); }
+.tprofile__body { padding: 18px 12px 14px; display: flex; flex-direction: column; }
+.tprofile__name { font-family: var(--font-heading); font-size: 19px; font-weight: 700; color: var(--text); }
+.tprofile__meta { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--text-subtle); margin-top: 5px; }
+.tprofile__meta svg { flex: none; color: var(--blue-500); }
+.tprofile__bio { font-size: 13.5px; line-height: 1.62; color: var(--text-muted); margin: 12px 0 0; }
+.tprofile__foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+.tprofile__email { font-size: 12.5px; color: var(--text-subtle); text-decoration: none; overflow-wrap: anywhere; }
+.tprofile__email:hover { color: var(--blue-700); }
+.tprofile__view { display: inline-flex; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; color: var(--blue-700); font-family: var(--font-sans); font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+.tprofile__view:hover { color: var(--blue-500); }
+.tprofile__view svg { transition: transform .2s; }
+.tprofile__view:hover svg { transform: translateX(3px); }
+.tprofile--vacant .tprofile__photo { background: var(--bg-card-alt); cursor: default; }
+.tprofile--vacant .tprofile__initials { color: var(--text-subtle); font-size: 44px; }
+
+/* Profile modal */
+.profile-modal { width: 560px; }
+.profile-modal__photo { position: relative; height: 262px; border-radius: var(--radius-xl) var(--radius-xl) 0 0; overflow: hidden; background: linear-gradient(140deg, var(--blue-700), var(--blue-400)); }
+.profile-modal__photo img { width: 100%; height: 100%; object-fit: cover; }
+.profile-modal__photo-initials { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 84px; font-weight: 800; color: rgba(255, 255, 255, .92); }
+.profile-modal__shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 42%, rgba(11, 18, 32, .78)); }
+.profile-modal__intro { position: absolute; left: 26px; right: 26px; bottom: 18px; display: flex; flex-direction: column; gap: 7px; }
+.profile-modal__badge { align-self: flex-start; background: var(--blue-600); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 12px; border-radius: var(--radius-full); }
+.profile-modal__name { font-family: var(--font-heading); font-size: 25px; font-weight: 700; color: #fff; line-height: 1.1; }
+.profile-modal__meta { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: rgba(255, 255, 255, .85); }
+.profile-modal__body { padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 20px; }
+.profile-modal__label { display: block; font-size: 11px; font-weight: 700; letter-spacing: .14em; color: var(--blue-600); margin-bottom: 9px; }
+.profile-modal__bio { margin: 0; font-size: 14.5px; line-height: 1.7; color: var(--text-muted); }
+.profile-modal__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.profile-modal__tag { background: var(--blue-50); color: var(--blue-700); font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: var(--radius-full); }
+.profile-modal__contacts { display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--border); padding-top: 18px; }
+.profile-modal__contact { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--text); text-decoration: none; }
+.profile-modal__contact svg { flex: none; color: var(--blue-600); }
+a.profile-modal__contact:hover { color: var(--blue-700); }
+.profile-modal .modal__close { position: absolute; top: 14px; right: 14px; z-index: 3; background: rgba(255, 255, 255, .92); color: var(--slate-800); }
+@media (max-width: 560px) { .profile-modal__photo { height: 220px; } }
+
 .theme-testimonial {
   display: flex; flex-direction: column; gap: 20px; background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius-xl); padding: 34px 36px; max-width: 640px;

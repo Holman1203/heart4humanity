@@ -4,25 +4,24 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var DASHBOARD = [
-    { num: 512300, label: 'People reached', max: 600000, suffix: '+' },
-    { num: 186, label: 'Communities served', max: 220 },
-    { num: 128400, label: 'Women supported', max: 150000, suffix: '+' },
-    { num: 64200, label: 'Children enrolled', max: 80000, suffix: '+' },
-    { num: 42, label: 'Health facilities supported', max: 50 },
-    { num: 96, label: 'Water points constructed', max: 120 },
-    { num: 31, label: 'Schools rehabilitated', max: 40 },
-    { num: 18700, label: 'Nutrition recoveries', max: 22000, suffix: '+' }
+    { num: 72000, label: 'People reached', max: 100000, suffix: '+' },
+    { num: 24, label: 'Communities served', max: 40 },
+    { num: 18000, label: 'Women supported', max: 25000, suffix: '+' },
+    { num: 9000, label: 'Children enrolled', max: 12000, suffix: '+' },
+    { num: 12, label: 'Health facilities supported', max: 20 },
+    { num: 18, label: 'Water points constructed', max: 30 },
+    { num: 6, label: 'Schools rehabilitated', max: 10 },
+    { num: 2600, label: 'Nutrition recoveries', max: 4000, suffix: '+' }
   ];
 
   var STATES = [
-    { name: 'Borno', x: 62, y: 38, projects: 42, beneficiaries: '210,000+', partners: 14, image: 'assets/photo-relief.jpg' },
-    { name: 'Yobe', x: 55, y: 30, projects: 18, beneficiaries: '64,500+', partners: 7, image: 'assets/photo-education.jpg' },
-    { name: 'Adamawa', x: 70, y: 52, projects: 21, beneficiaries: '88,200+', partners: 9, image: 'assets/photo-training.jpg' },
-    { name: 'Kano', x: 40, y: 28, projects: 15, beneficiaries: '52,000+', partners: 6, image: 'assets/photo-education.jpg' },
-    { name: 'FCT — Abuja', x: 42, y: 55, projects: 9, beneficiaries: '18,400+', partners: 11, image: 'assets/photo-training.jpg' },
-    { name: 'Lagos', x: 18, y: 68, projects: 6, beneficiaries: '12,900+', partners: 8, image: 'assets/photo-relief.jpg' },
-    { name: 'Rivers', x: 38, y: 78, projects: 5, beneficiaries: '9,600+', partners: 4, image: 'assets/photo-education.jpg' },
-    { name: 'Enugu', x: 48, y: 68, projects: 4, beneficiaries: '7,100+', partners: 3, image: 'assets/photo-training.jpg' }
+    { name: 'Borno (BAY)', x: 66, y: 34, lgas: 6, beneficiaries: '28,000+', partners: 4, image: 'assets/photo-relief.jpg' },
+    { name: 'Yobe (BAY)', x: 52, y: 26, lgas: 3, beneficiaries: '10,000+', partners: 2, image: 'assets/photo-education.jpg' },
+    { name: 'Adamawa (BAY)', x: 72, y: 56, lgas: 4, beneficiaries: '14,000+', partners: 2, image: 'assets/photo-training.jpg' },
+    { name: 'Bauchi (Northeast)', x: 44, y: 44, lgas: 2, beneficiaries: '6,000+', partners: 1, image: 'assets/photo-relief.jpg' },
+    { name: 'Gombe (Northeast)', x: 56, y: 46, lgas: 2, beneficiaries: '5,000+', partners: 1, image: 'assets/photo-education.jpg' },
+    { name: 'Kano (Northwest)', x: 34, y: 30, lgas: 2, beneficiaries: '5,000+', partners: 1, image: 'assets/photo-training.jpg' },
+    { name: 'Katsina (Northwest)', x: 26, y: 22, lgas: 1, beneficiaries: '4,000+', partners: 1, image: 'assets/photo-relief.jpg' }
   ];
 
   var STORIES = [
@@ -72,7 +71,7 @@
       '<span class="map-panel__state">' + s.name + '</span>' +
       '<img class="map-panel__photo" src="' + s.image + '" alt="Field photo from ' + s.name + '" loading="lazy">' +
       '<div class="map-panel__stats">' +
-        '<div class="map-panel__stat"><span class="map-panel__stat-num">' + s.projects + '</span><span class="map-panel__stat-label">Projects</span></div>' +
+        '<div class="map-panel__stat"><span class="map-panel__stat-num">' + s.lgas + '</span><span class="map-panel__stat-label">LGAs</span></div>' +
         '<div class="map-panel__stat"><span class="map-panel__stat-num">' + s.beneficiaries + '</span><span class="map-panel__stat-label">Beneficiaries</span></div>' +
         '<div class="map-panel__stat"><span class="map-panel__stat-num">' + s.partners + '</span><span class="map-panel__stat-label">Partners</span></div>' +
       '</div>';

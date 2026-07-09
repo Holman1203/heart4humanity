@@ -101,17 +101,28 @@
   /* ============================================================
      SCROLL REVEALS — any [data-reveal] element
      ============================================================ */
-  (function setupReveals() {
-    var els = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
-    function reveal(el) { el.classList.add('is-revealed'); }
+  var revealIO = null;
+  function reveal(el) { el.classList.add('is-revealed'); }
+  function observeReveals(root) {
+    var scope = root || document;
+    var els = Array.prototype.slice.call(scope.querySelectorAll('[data-reveal]'));
+    if (root && root.hasAttribute && root.hasAttribute('data-reveal')) els.push(root);
+    if (!els.length) return;
     if (reduceMotion || !('IntersectionObserver' in window)) { els.forEach(reveal); return; }
+    if (!revealIO) {
+      revealIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { reveal(en.target); revealIO.unobserve(en.target); } });
+      }, { threshold: 0.12 });
+    }
     var vh = window.innerHeight;
-    els.forEach(function (el) { if (el.getBoundingClientRect().top <= vh * 0.88) reveal(el); });
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) { if (en.isIntersecting) { reveal(en.target); io.unobserve(en.target); } });
-    }, { threshold: 0.12 });
-    els.forEach(function (el) { if (!el.classList.contains('is-revealed')) io.observe(el); });
-  })();
+    els.forEach(function (el) {
+      if (el.classList.contains('is-revealed')) return;
+      if (el.getBoundingClientRect().top <= vh * 0.88) reveal(el);
+      else revealIO.observe(el);
+    });
+  }
+  window.H4H.observeReveals = observeReveals;
+  observeReveals();
 
   /* ============================================================
      FLOATING UI — donate button + back to top

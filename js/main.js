@@ -54,10 +54,10 @@
   ];
 
   var DASHBOARD = [
-    { num: 512300, label: 'People reached' },
-    { num: 128400, label: 'Women supported' },
-    { num: 64200, label: 'Children enrolled' },
-    { num: 96, label: 'Water points constructed' }
+    { num: 72000, label: 'People reached' },
+    { num: 18000, label: 'Women supported' },
+    { num: 9000, label: 'Children enrolled' },
+    { num: 18, label: 'Water points constructed' }
   ];
 
   var STORIES = [
