@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["--yes", "serve", "-l", "4173", "."],
       "port": 4173
+    },
+    {
+      "name": "sorasun-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5174", "--directory", "C:/Users/CBI-ICT NG/sorasun"],
+      "port": 5174
     }
   ]
 }
