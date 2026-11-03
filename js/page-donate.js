@@ -68,7 +68,7 @@
       ctaEl.textContent = amt > 0 ? 'Donate ' + fmt(amt) + ' via Paystack' : 'Choose an amount';
       ctaEl.disabled = amt <= 0;
       ctaEl.onclick = function () {
-        if (amt > 0 && window.H4H.openDonateAmount) window.H4H.openDonateAmount(amt);
+        if (amt > 0) window.open(window.H4H.PAYSTACK_URL + '?amount=' + amt, '_blank', 'noopener');
       };
     }
   }

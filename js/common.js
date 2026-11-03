@@ -8,6 +8,7 @@
   function fmt(v) { return '₦' + (Number.isInteger(v) ? v.toLocaleString('en-US') : v.toFixed(2)); }
   window.H4H = window.H4H || {};
   window.H4H.fmt = fmt;
+  window.H4H.PAYSTACK_URL = 'https://paystack.shop/pay/pwhud5lbea';
 
   /* ============================================================
      DARK MODE
@@ -328,8 +329,11 @@
     document.addEventListener('click', function (e) {
       var btn = e.target.closest('[data-donate]');
       if (!btn) return;
-      var preset = btn.dataset.preset !== undefined ? Number(btn.dataset.preset) : undefined;
-      openDonate(preset);
+      e.preventDefault();
+      var presetIdx = btn.dataset.preset !== undefined ? Number(btn.dataset.preset) : undefined;
+      var amt = (presetIdx !== undefined && PRESET_VALUES[presetIdx]) ? PRESET_VALUES[presetIdx] : null;
+      var url = window.H4H.PAYSTACK_URL + (amt ? '?amount=' + amt : '');
+      window.open(url, '_blank', 'noopener');
     });
   }
 
