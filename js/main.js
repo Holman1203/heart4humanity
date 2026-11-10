@@ -44,7 +44,7 @@
   ];
 
   var PROJECTS = [
-    { title: 'Mobile Health Outreach for IDP Camps', cat: 'health', pill: 'HEALTH', location: 'Maiduguri, Borno', donor: 'WHO', duration: 'Jan – Dec 2025', desc: 'Mobile clinics bringing screenings and primary care to families sheltering in displacement camps.', progress: 72, image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Mobile Health Outreach for IDP Camps', cat: 'health', pill: 'HEALTH', location: 'Maiduguri, Borno', donor: 'WHO', duration: 'Jan – Dec 2025', desc: 'Mobile clinics bringing screenings and primary care to families sheltering in displacement camps.', progress: 72, image: 'https://images.pexels.com/photos/33132346/pexels-photo-33132346/free-photo-of-healthcare-outreach-in-kaduna-nigeria.jpeg?auto=compress&cs=tinysrgb&w=900' },
     { title: 'Community-Based Nutrition Recovery', cat: 'nutrition', pill: 'NUTRITION', location: 'Konduga, Borno', donor: 'UNICEF', duration: 'Jan – Aug 2025', desc: 'Screening and treatment for acute malnutrition in children under five, with caregiver education.', progress: 58, image: 'https://images.unsplash.com/photo-1694286068158-836b3aec0599?auto=format&fit=crop&w=900&q=80' },
     { title: "Girls' Education & School Feeding", cat: 'education', pill: 'EDUCATION', location: 'Maiduguri, Borno', donor: 'Education First Foundation', duration: 'Jul 2025 – Jul 2026', desc: 'Keeping girls in school with scholarships, meals, learning materials and mentorship.', progress: 40, image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { title: 'Child Protection Case Management', cat: 'protection', pill: 'PROTECTION', location: 'Jere, Borno', donor: 'UN Foundation', duration: 'Mar – Dec 2025', desc: 'Case workers supporting unaccompanied and separated children toward safe, stable care.', progress: 65, image: 'https://images.pexels.com/photos/30037382/pexels-photo-30037382/free-photo-of-joyful-group-of-children-smiling-in-nigeria.jpeg?auto=compress&cs=tinysrgb&w=900' },
@@ -69,7 +69,7 @@
 
   var NEWS_FEATURED = { pill: 'FIELD UPDATE', date: 'July 28, 2025', title: 'Relief outreach brings food support to displaced families', desc: 'Our volunteers delivered food packages to families sheltering in temporary accommodation around Maiduguri — part of our ongoing commitment to the communities most affected by displacement.', image: 'assets/photo-relief.jpg' };
   var NEWS = [
-    { pill: 'PARTNERSHIP', date: 'Jul 12, 2025', title: 'New partnership expands mobile health outreach', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80' },
+    { pill: 'PARTNERSHIP', date: 'Jul 12, 2025', title: 'New partnership expands mobile health outreach', image: 'https://images.pexels.com/photos/33132346/pexels-photo-33132346/free-photo-of-healthcare-outreach-in-kaduna-nigeria.jpeg?auto=compress&cs=tinysrgb&w=900' },
     { pill: 'ANNOUNCEMENT', date: 'Jun 30, 2025', title: 'Applications open for 2025 girls’ scholarship cohort', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { pill: 'FIELD UPDATE', date: 'Jun 18, 2025', title: 'Solar boreholes restore water access in Bama', image: 'assets/other/wash/Latrine/Zango-Ranka-Solar-Powered-Borehole-2-e1725863871455.webp' }
   ];

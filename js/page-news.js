@@ -6,7 +6,7 @@
   var NEWS = [
     { pill: 'FIELD UPDATE', date: 'Aug 6, 2025', title: 'WASH kits distributed to displaced households in Zone A', image: 'assets/other/wash/kit2.jpeg', cat: 'field' },
     { pill: 'FIELD UPDATE', date: 'Jul 30, 2025', title: 'Volunteers join community-wide sanitation exercise across Maiduguri', image: 'assets/other/wash/sa1.jpeg', cat: 'field' },
-    { pill: 'PARTNERSHIP', date: 'Jul 12, 2025', title: 'New partnership expands mobile health outreach', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80', cat: 'partnership' },
+    { pill: 'PARTNERSHIP', date: 'Jul 12, 2025', title: 'New partnership expands mobile health outreach', image: 'https://images.pexels.com/photos/33132346/pexels-photo-33132346/free-photo-of-healthcare-outreach-in-kaduna-nigeria.jpeg?auto=compress&cs=tinysrgb&w=900', cat: 'partnership' },
     { pill: 'ANNOUNCEMENT', date: 'Jun 30, 2025', title: 'Applications open for 2025 girls’ scholarship cohort', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png', cat: 'announcement' },
     { pill: 'FIELD UPDATE', date: 'Jun 18, 2025', title: 'Solar boreholes restore water access in Bama', image: 'assets/other/wash/Latrine/Zango-Ranka-Solar-Powered-Borehole-2-e1725863871455.webp', cat: 'field' },
     { pill: 'FIELD UPDATE', date: 'May 22, 2025', title: 'Nutrition teams reach 3,000 children in outreach drive', image: 'https://images.unsplash.com/photo-1694286068158-836b3aec0599?auto=format&fit=crop&w=700&q=80', cat: 'field' },
