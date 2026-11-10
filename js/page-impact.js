@@ -28,7 +28,7 @@
     { quote: '"The scholarship didn’t just cover school fees — it told my daughter the world expected her to succeed."', name: 'Amina O.', role: 'Parent · Education programme', initials: 'AO', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png', alt: 'Portrait connected to the education programme', video: false },
     { quote: '"The relief team reached our shelter before the rains came. My children had food that week because someone chose to show up."', name: 'Fatima B.', role: 'Mother of three · Emergency Response', initials: 'FB', image: 'assets/photo-relief.jpg', alt: 'Portrait connected to the emergency response programme', video: false },
     { quote: '"The literacy and livelihoods training gave me a trade certificate and the confidence to teach others in my community."', name: 'Ibrahim K.', role: 'Graduate · FSL programme', initials: 'IK', image: 'assets/photo-training.jpg', alt: 'Portrait connected to the FSL programme', video: false },
-    { quote: '"Clean water at the camp meant my children stopped falling sick every month. That changed everything for us."', name: 'Halima S.', role: 'Beneficiary · WASH programme', initials: 'HS', image: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80', alt: 'Portrait connected to the WASH programme', video: true }
+    { quote: '"Clean water at the camp meant my children stopped falling sick every month. That changed everything for us."', name: 'Halima S.', role: 'Beneficiary · WASH programme', initials: 'HS', image: 'assets/other/wash/Latrine/HH sanitize.jpeg', alt: 'Portrait connected to the WASH programme', video: true }
   ];
 
   /* Dashboard */
