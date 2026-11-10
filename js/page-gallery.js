@@ -3,7 +3,7 @@
   'use strict';
   var PHOTOS = [
     { src: 'assets/photo-relief.jpg', cat: 'emergency', caption: 'Food distribution day, Maiduguri' },
-    { src: 'assets/photo-education.jpg', cat: 'education', caption: 'Classroom session, Borno State' },
+    { src: 'assets/other/Education/Outdoor Classroom in Maiduguri.png', cat: 'education', caption: 'Classroom session, Borno State' },
     { src: 'assets/photo-training.jpg', cat: 'fsl', caption: 'Vocational training graduation' },
     { src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80', cat: 'health', caption: 'Mobile clinic outreach' },
     { src: 'https://images.unsplash.com/photo-1694286068158-836b3aec0599?auto=format&fit=crop&w=900&q=80', cat: 'nutrition', caption: 'Nutrition screening for children' },
@@ -11,7 +11,7 @@
     { src: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=900&q=80', cat: 'protection', caption: 'Community support session' },
     { src: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=900&q=80', cat: 'fsl', caption: 'Small business supported by a microloan' },
     { src: 'assets/photo-relief.jpg', cat: 'emergency', caption: 'Volunteers packing relief kits' },
-    { src: 'assets/photo-education.jpg', cat: 'education', caption: 'Scholarship recipients, 2025 cohort' },
+    { src: 'assets/other/Education/Outdoor Classroom in Maiduguri.png', cat: 'education', caption: 'Scholarship recipients, 2025 cohort' },
     { src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80', cat: 'health', caption: 'Health worker training session' },
     { src: 'assets/photo-training.jpg', cat: 'community', caption: 'Community gathering after graduation day' }
   ];

@@ -16,16 +16,16 @@
 
   var STATES = [
     { name: 'Borno (BAY)', x: 66, y: 34, lgas: 6, beneficiaries: '28,000+', partners: 4, image: 'assets/photo-relief.jpg' },
-    { name: 'Yobe (BAY)', x: 52, y: 26, lgas: 3, beneficiaries: '10,000+', partners: 2, image: 'assets/photo-education.jpg' },
+    { name: 'Yobe (BAY)', x: 52, y: 26, lgas: 3, beneficiaries: '10,000+', partners: 2, image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { name: 'Adamawa (BAY)', x: 72, y: 56, lgas: 4, beneficiaries: '14,000+', partners: 2, image: 'assets/photo-training.jpg' },
     { name: 'Bauchi (Northeast)', x: 44, y: 44, lgas: 2, beneficiaries: '6,000+', partners: 1, image: 'assets/photo-relief.jpg' },
-    { name: 'Gombe (Northeast)', x: 56, y: 46, lgas: 2, beneficiaries: '5,000+', partners: 1, image: 'assets/photo-education.jpg' },
+    { name: 'Gombe (Northeast)', x: 56, y: 46, lgas: 2, beneficiaries: '5,000+', partners: 1, image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { name: 'Kano (Northwest)', x: 34, y: 30, lgas: 2, beneficiaries: '5,000+', partners: 1, image: 'assets/photo-training.jpg' },
     { name: 'Katsina (Northwest)', x: 26, y: 22, lgas: 1, beneficiaries: '4,000+', partners: 1, image: 'assets/photo-relief.jpg' }
   ];
 
   var STORIES = [
-    { quote: '"The scholarship didn’t just cover school fees — it told my daughter the world expected her to succeed."', name: 'Amina O.', role: 'Parent · Education programme', initials: 'AO', image: 'assets/photo-education.jpg', alt: 'Portrait connected to the education programme', video: false },
+    { quote: '"The scholarship didn’t just cover school fees — it told my daughter the world expected her to succeed."', name: 'Amina O.', role: 'Parent · Education programme', initials: 'AO', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png', alt: 'Portrait connected to the education programme', video: false },
     { quote: '"The relief team reached our shelter before the rains came. My children had food that week because someone chose to show up."', name: 'Fatima B.', role: 'Mother of three · Emergency Response', initials: 'FB', image: 'assets/photo-relief.jpg', alt: 'Portrait connected to the emergency response programme', video: false },
     { quote: '"The literacy and livelihoods training gave me a trade certificate and the confidence to teach others in my community."', name: 'Ibrahim K.', role: 'Graduate · FSL programme', initials: 'IK', image: 'assets/photo-training.jpg', alt: 'Portrait connected to the FSL programme', video: false },
     { quote: '"Clean water at the camp meant my children stopped falling sick every month. That changed everything for us."', name: 'Halima S.', role: 'Beneficiary · WASH programme', initials: 'HS', image: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80', alt: 'Portrait connected to the WASH programme', video: true }

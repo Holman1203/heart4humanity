@@ -3,13 +3,13 @@
   'use strict';
   var PUBLICATIONS = [
     { title: 'Annual Report 2025', cat: 'Annual Report', date: 'Jan 2026', image: 'assets/photo-relief.jpg' },
-    { title: 'Rapid Needs Assessment — Borno State', cat: 'Assessment', date: 'Sep 2025', image: 'assets/photo-education.jpg' },
+    { title: 'Rapid Needs Assessment — Borno State', cat: 'Assessment', date: 'Sep 2025', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { title: 'Livelihoods Impact Study', cat: 'Research', date: 'Jul 2025', image: 'assets/photo-training.jpg' },
-    { title: "Case Study: Girls' Education Retention", cat: 'Case Study', date: 'May 2025', image: 'assets/photo-education.jpg' },
+    { title: "Case Study: Girls' Education Retention", cat: 'Case Study', date: 'May 2025', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { title: 'Learning Brief: WASH in Displacement Camps', cat: 'Learning Brief', date: 'Mar 2025', image: 'assets/photo-relief.jpg' },
     { title: 'Health Outreach Programme Review', cat: 'Assessment', date: 'Jan 2025', image: 'assets/photo-training.jpg' },
     { title: 'Annual Report 2024', cat: 'Annual Report', date: 'Jan 2025', image: 'assets/photo-relief.jpg' },
-    { title: 'Nutrition Recovery Outcomes Study', cat: 'Research', date: 'Nov 2024', image: 'assets/photo-education.jpg' },
+    { title: 'Nutrition Recovery Outcomes Study', cat: 'Research', date: 'Nov 2024', image: 'assets/other/Education/Outdoor Classroom in Maiduguri.png' },
     { title: 'Case Study: Solar Boreholes in Bama', cat: 'Case Study', date: 'Sep 2024', image: 'assets/photo-training.jpg' },
     { title: 'Learning Brief: Protection Case Management', cat: 'Learning Brief', date: 'Jun 2024', image: 'assets/photo-relief.jpg' }
   ];
